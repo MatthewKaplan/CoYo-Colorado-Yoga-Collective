@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import '../Styles/Main.scss';
-import StudioCard from '../StudioCard/StudioCard.js';
+import Studios from '../Studios/Studios.js';
 import data from '../data.js';
 
 export default class App extends Component {
@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <section className="App">
 
-      <StudioCard />
+      <Studios />
       </section>
     );
   }

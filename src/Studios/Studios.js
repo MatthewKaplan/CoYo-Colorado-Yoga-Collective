@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import data from '../data./js';
 
 export default class Studios extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
