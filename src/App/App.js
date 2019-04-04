@@ -6,14 +6,14 @@ import data from '../data.js';
 export default class App extends Component {
   constructor() {
     super();
+    
   }
 
   render() {
     console.log(data)
     return (
       <section className="App">
-
-      <Studios />
+        <Studios />
       </section>
     );
     

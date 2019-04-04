@@ -1,21 +1,23 @@
-import React, { Component } from 'react';
-import data from '../data.js';
+import React from 'react';
+import './StudioCard.css';
 
-export default class StudioCard extends Component {
-  constructor() {
-    super();
-  }
 
-  render() {
-    return (
-      <section className='card-container'>
-        {/* <img src={data.studios.img} />
-        <p className='studio-name'>{data.studios.name}</p>
-        <p className='address'>{data.studios.address}</p>
-        <p className='phone'>{data.studios.phoneNum}</p>
-        <p className='mission'>{data.mission}</p>
-        <p className='rating'>{data.googleRating}</p> */}
+
+const studioCardUI = ( props ) => {
+  return (
+    <div className="cardContainer">
+      <section className="studioCards">
+        <img src={props.image} alt="Group Yoga in studio" className="studioImgs"/>
+        <p className="studioName">{props.name}</p>
+        <p className="studioAddress">{props.address}</p>
+        <p className="studioNumber">{props.phone}</p>
+        <p className="studioMission">{props.mission}</p>
+        <p className="studioRating">{props.rating}</p>
+        <a href={props.link} className="studioLink" target="_blank">{props.name} Website</a>
+        <p className="studioFee">{props.fee}</p>
       </section>
-    )
-  }
+    </div>
+  )
 }
+
+export default studioCardUI;
