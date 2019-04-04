@@ -3,6 +3,7 @@ import './StudioCard.css';
 
 
 const studioCardUI = ( props ) => {
+  
   const starsInnerStyle = {
   width: props.roundedRating
 };

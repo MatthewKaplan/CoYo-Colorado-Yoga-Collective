@@ -15,14 +15,14 @@ export default class Studios extends Component {
       {
         data.studios.map( studio => 
         <StudioCard
-        image= {studio.img}
-        name= {studio.name}
-        address= {studio.address}
-        phone= {studio.phoneNum}
-        mission= {studio.mission}
+        image={studio.img}
+        name={studio.name}
+        address={studio.address}
+        phone={studio.phoneNum}
+        mission={studio.mission}
         rating={studio.googleRating}
-        roundedRating= {`${Math.round(studio.googleRating / 5 * 100 / 10) * 10}%`}
-        link= {studio.link}
+        roundedRating={`${Math.round(studio.googleRating / 5 * 100 / 10) * 10}%`}
+        link={studio.link}
         fee={studio.dropInFee} />
         )
       }
