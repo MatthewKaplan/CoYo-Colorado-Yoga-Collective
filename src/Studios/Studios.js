@@ -8,7 +8,7 @@ export default class Studios extends Component {
     super(props);
   }
 
-  render() {    
+  render() { 
 
     return (
       <section className='cards-container'>
@@ -20,7 +20,8 @@ export default class Studios extends Component {
         address= {studio.address}
         phone= {studio.phoneNum}
         mission= {studio.mission}
-        rating= {studio.googleRating}
+        rating={studio.googleRating}
+        roundedRating= {`${Math.round(studio.googleRating / 5 * 100 / 10) * 10}%`}
         link= {studio.link}
         fee={studio.dropInFee} />
         )
