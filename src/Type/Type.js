@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import data from '../data.js';
-
+import TypeCard from '../TypeCard/TypeCard.js';
 export default class Type extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +11,7 @@ export default class Type extends Component {
     return (
       <section className='typeContainer'>
       {
-        data.yoga.map( yogaType => 
+        data.yoga.types.map( yogaType => 
         <TypeCard
         name={yogaType.name}
         purpose={yogaType.purpose}
