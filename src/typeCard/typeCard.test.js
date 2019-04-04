@@ -1,7 +1,7 @@
 import React from 'react';
-import typeCard from './typeCard';
+import TypeCard from './TypeCard';
 import { shallow } from 'enzyme';
 
-describe('typeCard', () => {
+describe('TypeCard', () => {
 
 })
