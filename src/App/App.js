@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
 // import '../Styles/Main.scss';
 import Studios from '../Studios/Studios.js';
+import search from '../Search/SearchFunction.js';
+import SearchBar from '../Search/SearchBar.js';
 import data from '../data.js';
 
 export default class App extends Component {
   constructor() {
     super();
-    
+    this.state = {
+      searchResults: []
+    };
   }
 
+  updateResults = query => {
+    this.setState(
+      {
+        searchResults: search(query)
+      },
+      console.log(this.state.searchResults)
+    );
+  };
+
   render() {
-    console.log(data)
     return (
       <section className="App">
+      <SearchBar updateResults={this.updateResults} />
         <Studios />
       </section>
     );
