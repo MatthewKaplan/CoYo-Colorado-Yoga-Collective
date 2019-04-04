@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import data from '../data.js';
 import StudioCard from '../StudioCard/StudioCard.js';
+import '../StudioCard/StudioCard.css';
 
 export default class Studios extends Component {
   constructor(props) {
     super(props);
   }
 
-  render() {
-
-    // this.data.studios.map(studio => studio);
+  render() {    
 
     return (
-      <section class='cards-container'>
+      <section className='cards-container'>
       {
         data.studios.map( studio => 
         <StudioCard

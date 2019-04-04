@@ -1,0 +1,139 @@
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.cards-container {
+  align-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
+}
+
+.address-block {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardContainer {
+  display: inline-block;
+  transition:all 0.3s ease;
+  border-radius: 5px;
+  border: 1px solid #44070F;
+  box-shadow:  3px 2px 2px #284B63;
+/*   margin: 5px 5px 15px 5px; */
+  min-width: 250px;
+  position: relative;
+/*   width: 23%; */
+}
+
+.cardContainer:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow:5px 5px 5px #284B63;
+}
+
+.studioImgs {
+  position: relative;
+  filter: brightness(80%);
+  max-height: 120px;
+  object-fit: cover; 
+  width: 100%;
+  z-index: 0;
+}
+
+.studioName {
+  font-family: 'Aladin', cursive;
+  position: absolute;
+  font-size: 45px;
+  color: #F4F9E9;
+  top: 0;
+  left:0;
+  z-index: 2;
+  padding: .5rem 0 0 .5rem;
+}
+
+.studioFee {
+  font-family: 'Raleway', sans-serif;
+   position: absolute;
+  top: 5px;
+  z-index: 3;
+  right: 1rem;
+  font-size: 23px;
+  text-align: center;
+  
+  color: #F4F9E9;
+  text-transform: uppercase;
+}
+
+.drop-in-text {
+  letter-spacing: 1px;
+/*   font-family: 'Aladin', cursive; */
+  font-size: 13px;
+}
+
+.cardContainer {
+  text-align: center;
+  padding: 1rem;
+   font-family: 'Raleway', sans-serif;
+}
+
+.studioAddress {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.studioNumber {
+  font-size: 20px;
+/*   padding: 3px; */
+}
+
+.studioLink {
+  overflow-wrap: break-word;
+  transition:all 0.4s ease;
+  font-size: 14px;
+  background: lightgrey;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-top: 5px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+.studio-link:hover {
+  color: purple;
+  font-weight: bold;
+  background: white;
+}
+
+.mission-container {
+  text-align: left;
+}
+
+.mission-heading {
+  font-weight: bold;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+}
+
+.studioMission {
+  margin: .5rem 0 1rem 0;
+  height: 100px;
+  overflow: auto;
+}
+
