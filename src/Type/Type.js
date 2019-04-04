@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import data from '../data.js';
 import TypeCard from '../TypeCard/TypeCard.js';
+// import '../Styles/TypeCard.scss';
+
 export default class Type extends Component {
   constructor(props) {
     super(props);

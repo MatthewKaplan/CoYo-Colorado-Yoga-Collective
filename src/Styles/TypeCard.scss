@@ -1,0 +1,41 @@
+@import 'Mixins';
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.typeContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.mainContainer {
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow:  3px 2px 2px #284B63;
+  overflow-wrap: break-word;
+  min-height: 300px;
+  margin: 10px;
+  max-width: 275px;
+  padding: 20px;
+}
+
+.typeHeading {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+.purpose {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.beginner {
+  margin-bottom: 0px;
+}
