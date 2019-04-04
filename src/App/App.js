@@ -16,5 +16,6 @@ export default class App extends Component {
       <Studios />
       </section>
     );
+    
   }
 }
