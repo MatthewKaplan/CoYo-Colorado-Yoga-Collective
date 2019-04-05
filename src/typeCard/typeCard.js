@@ -8,9 +8,6 @@ const TypeCard = ( props ) => {
       <h5 className='purpose'>Purpose: {props.purpose}</h5>
       <p className='beginner'>Difficulty: {props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
       <p className='poses'>Poses: {props.commonPoses}</p>
-
-
-
     </section>
   )
 }
