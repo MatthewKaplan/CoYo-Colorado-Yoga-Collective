@@ -14,7 +14,7 @@ export default class Type extends Component {
       <section className='typeContainer'>
       {
         data.yoga.types.map( yogaType => 
-        <TypeCard
+        <TypeCard 
         name={yogaType.name}
         purpose={yogaType.purpose}
         beginnerFriendly={yogaType.beginnerFriendly}
