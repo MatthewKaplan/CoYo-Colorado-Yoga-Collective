@@ -19,7 +19,7 @@ export default class Type extends Component {
         purpose={yogaType.purpose}
         beginnerFriendly={yogaType.beginnerFriendly}
         propsUsed={yogaType.propsUsed}
-        commonPoses={yogaType.commonPoses}
+        commonPoses={yogaType.commonPoses.map(poses => <p> {poses} </p>)}
          />
         )
       }
