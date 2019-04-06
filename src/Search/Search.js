@@ -12,7 +12,7 @@ class Search extends Component {
   handleInputChange = () => {
     this.setState({
       searchQuery: this.search.value
-    }, this.props.updateResults(this.state.searchQuery));
+    }, this.props.handleSearch(this.state.searchQuery));
   }
 
   render() {

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../Styles/Header.scss';
-import Nav from './Nav'
+// import Nav from './Nav'
 
 export default function Header(props) {
   return (
     <header className="pageHeader">
-      <Nav />
+      {/* <Nav /> */}
       <section className="banner">
         <h1 className="coyoHeading">
           <div className="headingText co">CO</div>

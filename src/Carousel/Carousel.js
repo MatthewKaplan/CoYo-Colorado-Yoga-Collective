@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import data from '../data.js';
 import TypeCard from '../TypeCard/TypeCard.js';
 import '../Styles/Carousel.scss';
 
@@ -16,7 +15,7 @@ export default class Carousel extends Component {
     return (
       <section className='typeContainer'>
         {
-          data.yoga.types.map(yogaType =>
+          this.props.yogaTypes.map(yogaType =>
             <TypeCard
               name={yogaType.name}
               purpose={yogaType.purpose}
