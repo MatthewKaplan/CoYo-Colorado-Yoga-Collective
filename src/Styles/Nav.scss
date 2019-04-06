@@ -10,8 +10,20 @@ li {
 .navBar {
   // height: 50px;
   background: rgb(156, 171, 196);
-  padding: 2px 5px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #072E73;
 }
+
+.navList{
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
 
 .logo {
   width: 3rem;

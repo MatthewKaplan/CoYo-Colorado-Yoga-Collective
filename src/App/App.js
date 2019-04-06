@@ -6,6 +6,7 @@ import search from '../Search/SearchFunction.js';
 import SearchBar from '../Search/SearchBar.js';
 import Studios from '../Studios/Studios.js';
 
+
 import '../Styles/Main.scss';
 
 export default class App extends Component {
