@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import data from '../data.js';
 import TypeCard from '../TypeCard/TypeCard.js';
-import '../Styles/TypeCard.scss';
+import '../Styles/Carousel.scss';
+
 
 export default class Carousel extends Component {
   constructor(props) {
