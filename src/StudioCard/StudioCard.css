@@ -30,7 +30,7 @@ a {
   border-radius: 5px;
   border: 1px solid #44070F;
   box-shadow:  3px 2px 2px #284B63;
-/*   margin: 5px 5px 15px 5px; */
+  background: #eff0f2;
   min-width: 250px;
   position: relative;
 /*   width: 23%; */
@@ -45,7 +45,7 @@ a {
 
 .studioImgs {
   position: relative;
-  filter: brightness(80%);
+  filter: brightness(60%);
   max-height: 120px;
   object-fit: cover; 
   width: 100%;

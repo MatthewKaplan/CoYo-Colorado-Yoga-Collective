@@ -8,14 +8,13 @@
 }
 
 .typeContainer {
-  // background: blue;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px;
 }
 
-.mainContainer {
+.yogaTypeCard {
   border: 2px solid black;
   border-radius: 5px;
   box-shadow:  3px 2px 2px #284B63;
@@ -24,6 +23,7 @@
   margin: 10px;
   max-width: 275px;
   padding: 20px;
+  background: #eff0f2;
 }
 
 .typeHeading {
@@ -40,3 +40,4 @@
 .beginner {
   margin-bottom: 0px;
 }
+

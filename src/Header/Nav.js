@@ -12,7 +12,7 @@ export default function Nav(props) {
       </div>
       <ul className="navList">
         <li className="facebook socialMedia">
-         <a href="www.facebook.com">
+         <a href="https://www.facebook.com">
           <FontAwesomeIcon icon={['fab', 'facebook-square']} />
          </a>
         </li>

@@ -4,13 +4,15 @@ import Nav from './Nav'
 
 export default function Header(props) {
   return (
-    <header className="banner">
+    <header className="pageHeader">
       <Nav />
-      <h1 className="coyoHeading">
-        <div className="headingText co">CO</div>
-        <div className="headingText yo">YO</div>
-        <div className="headingText coyoHeading">Colorado Yoga</div>
-      </h1>
+      <section className="banner">
+        <h1 className="coyoHeading">
+          <div className="headingText co">CO</div>
+          <div className="headingText yo">YO</div>
+        </h1>
+        <h2 className="fullNameHeading">Colorado Yoga Connection</h2>
+      </section>
     </header>
   )
 }  

@@ -4,7 +4,7 @@ import '../Styles/TypeCard.scss';
 const TypeCard = (props) => {
 
   return (
-    <section className="mainContainer">
+    <section className="yogaTypeCard">
       <h4 className='typeHeading'>{props.name}</h4>
       <h5 className="purpose">Purpose:</h5>
       <h5 className='purpose'>{props.purpose}</h5>
