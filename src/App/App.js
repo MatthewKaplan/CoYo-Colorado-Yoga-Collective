@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header.js';
 import Carousel from '../Carousel/Carousel.js';
-import TypeCard from '../TypeCard/TypeCard.js';
-import search from '../Search/SearchFunction.js';
-import SearchBar from '../Search/SearchBar.js';
+// import TypeCard from '../TypeCard/TypeCard.js';
+// import search from '../Search/SearchFunction.js';
+// import SearchBar from '../Search/SearchBar.js';
 import Studios from '../Studios/Studios.js';
-
+import Search from '../Search/Search.js';
 
 import '../Styles/Main.scss';
 
@@ -30,14 +30,19 @@ export default class App extends Component {
       .catch(err => console.log(err))
   }
 
-  updateResults = query => {
+  handleSearch = (searchQuery) => {
+    const results = [];
+    let query = searchQuery.toLowerCase();
+  
+    let matchingStudios = this.state.studios.filter(studio => studio.name.toLowerCase().includes(query));
+    matchingStudios.forEach(match => results.push(match));
     this.setState(
       {
-        searchResults: search(query)
+        searchResults: results
       },
-      console.log(this.state.searchResults)
+      console.log('line44 search results: ', this.state.searchResults)
     );
-  };
+  }
 
   render() {
     console.log(this.state)
@@ -45,7 +50,10 @@ export default class App extends Component {
       <section className="App">
         <Header />
         <Carousel yogaTypes={this.state.yogaTypes}/>
-        <SearchBar updateResults={this.updateResults} />
+        <Search 
+        handleSearch={this.handleSearch}
+        studios={this.state.studios}
+        />
         <Studios studios={this.state.studios}/>
       </section>
     );
