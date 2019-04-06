@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Studios from '../Studios/Studios.js';
-import search from '../Search/SearchFunction.js';
-import SearchBar from '../Search/SearchBar.js';
+import Header from '../Header/Header.js';
 import Carousel from '../Carousel/Carousel.js';
 import TypeCard from '../TypeCard/TypeCard.js';
+import search from '../Search/SearchFunction.js';
+import SearchBar from '../Search/SearchBar.js';
+import Studios from '../Studios/Studios.js';
 import '../Styles/Main.scss';
 
 export default class App extends Component {
