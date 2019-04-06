@@ -46,7 +46,7 @@ export default class App extends Component {
         <Header />
         <Carousel yogaTypes={this.state.yogaTypes}/>
         <SearchBar updateResults={this.updateResults} />
-        <Studios />
+        <Studios studios={this.state.studios}/>
       </section>
     );
     

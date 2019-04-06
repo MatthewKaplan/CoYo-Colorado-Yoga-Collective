@@ -1,6 +1,6 @@
-import React from 'react';
+import React from './node_modules/react';
 import TypeCard from './TypeCard';
-import { shallow } from 'enzyme';
+import { shallow } from './node_modules/enzyme';
 
 describe('TypeCard', () => {
 

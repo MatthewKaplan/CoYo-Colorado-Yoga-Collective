@@ -1,5 +1,3 @@
-import data from '../data.js';
-
 export default function search(searchQuery) {
   const results = [];
   let query = searchQuery.toLowerCase();

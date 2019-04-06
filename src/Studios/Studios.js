@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import data from '../data.js';
 import StudioCard from '../StudioCard/StudioCard.js';
 import '../StudioCard/StudioCard.css';
 
@@ -13,7 +12,7 @@ export default class Studios extends Component {
     return (
       <section className='cards-container'>
       {
-        data.studios.map( studio => 
+        this.props.studios.map( studio => 
         <StudioCard
         image={studio.img}
         name={studio.name}
