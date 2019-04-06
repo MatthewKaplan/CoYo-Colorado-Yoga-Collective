@@ -1,0 +1,37 @@
+@import 'Mixins';
+
+ul,
+li {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navBar {
+  // height: 50px;
+  background: rgb(156, 171, 196);
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #072E73;
+}
+
+.navList{
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+
+.logo {
+  width: 3rem;
+  border: 3px solid  #072E73;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.logoImg {
+  width: 100%;
+}

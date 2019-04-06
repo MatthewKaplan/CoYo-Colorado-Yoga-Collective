@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import Studios from '../Studios/Studios.js';
+import Header from '../Header/Header.js';
+import Carousel from '../Carousel/Carousel.js';
+import TypeCard from '../TypeCard/TypeCard.js';
 import search from '../Search/SearchFunction.js';
 import SearchBar from '../Search/SearchBar.js';
-import Type from '../Type/Type.js';
+import Studios from '../Studios/Studios.js';
+
+
 import '../Styles/Main.scss';
 
 export default class App extends Component {
@@ -39,8 +43,9 @@ export default class App extends Component {
     console.log(this.state)
     return (
       <section className="App">
-      <SearchBar updateResults={this.updateResults} />
-        <Type />
+        <Header />
+        <Carousel yogaTypes={this.state.yogaTypes}/>
+        <SearchBar updateResults={this.updateResults} />
         <Studios />
       </section>
     );

@@ -1,0 +1,33 @@
+@import 'Mixins';
+
+
+// headingText co">CO</div>
+//         <div className="headingText yo">YO</div>
+//         <div className="headingText coyoHeading">Co
+
+
+.banner {
+  width: 100%;
+  background: no-repeat bottom url("./colorado-mountains.jpg");
+  filter: brightness(80%);
+  color: #eff0f2;
+  text-align: center;
+  padding: 100px;
+}
+
+.co,
+.yo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  line-height: .8;
+  font-size: 100px;
+  text-shadow: #46A5CD 3px 3px 0px, #9C9C9C 5px 5px 0px;
+}
+
+h1 {
+  margin: 0 0 75px 0;
+}
+
+.fullNameHeading {
+  font-family: 'Berkshire Swash', cursive;
+}
