@@ -1,7 +1,7 @@
 import React from 'react';
 
-const TypeCard = ( props ) => {
-  
+const TypeCard = (props) => {
+
   return (
     <section className="mainContainer">
       <h4 className='typeHeading'>{props.name}</h4>
