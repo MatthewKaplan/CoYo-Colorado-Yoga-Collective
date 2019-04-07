@@ -1,17 +1,12 @@
 .searchStudioContainer {
   display: flex;
-  height: 40px;
-  margin: 0 auto;
-  padding: 0.5rem;
-  width: 275px;
+  justify-content: center;
 }
 
 .searchStudio {
-  display: inline-flex;
-  flex: 1 1 400px;
-  overflow: hidden;
-  position: relative;
-}
+  margin: 50px;
+  width: 30%; 
+} 
 
 .searchIcon {
   padding: 0.2rem;
@@ -19,10 +14,10 @@
 }
 
 .studioSearch {
+  width: 100%;
   border: 1px solid #538ac5;
-  flex: 1;
   font-size: 16px;
-  padding: 0.2rem 0.2rem 0.2rem 1rem;
+  padding: .5rem;
 }
 
 .studioSearch:focus {

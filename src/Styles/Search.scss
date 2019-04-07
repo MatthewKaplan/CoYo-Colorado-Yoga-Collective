@@ -1,0 +1,29 @@
+@import 'Mixins';
+
+.searchStudioContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.searchStudio {
+  margin: 50px;
+  width: 30%; 
+} 
+
+.searchIcon {
+  padding: 0.2rem;
+  font-size: 16px;
+}
+
+.studioSearch {
+  width: 100%;
+  border: 1px solid #538ac5;
+  font-size: 16px;
+  padding: .5rem;
+}
+
+.studioSearch:focus {
+  border-right: none;
+  border: 1px solid black;
+  outline: none;
+}

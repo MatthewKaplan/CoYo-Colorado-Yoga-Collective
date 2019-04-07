@@ -9,10 +9,11 @@
 
 .imageContainer {
   width: 100%;
-  margin: 30px;
+  margin: 80px 50px 50px 50px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 15px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 25px;
 }
 
 .typeSmall {
