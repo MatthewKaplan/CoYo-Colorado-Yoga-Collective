@@ -4,11 +4,12 @@
   display: inline-block;
   transition:all 0.3s ease;
   border-radius: 5px;
-  border: 1px solid #44070F;
+  border: 1px solid #8C8886;
   box-shadow:  3px 2px 2px #284B63;
-  background: #eff0f2;
+  background: rgb(225, 232, 238);
   min-width: 250px;
   position: relative;
+  color: #302C2C;
 }
 
 .studioCard:hover {
@@ -18,26 +19,157 @@
   box-shadow:5px 5px 5px #284B63;
 }
 
+.studioImg {
+  position: relative;
+  filter: brightness(30%);
+  max-height: 150px;
+  object-fit: cover; 
+  width: 100%;
+  z-index: 0;
+}
+
+.cardCover {
+  position: relative;
+}
+
+.studioName {
+font-family: 'Tangerine', cursive;
+  position: absolute;
+  font-size: 45px;
+  color: rgb(163, 202, 219);
+  line-height: 1;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: .5rem 0 0 .5rem;
+}
+
 .studioFee {
   font-family: 'Raleway', sans-serif;
    position: absolute;
   top: 5px;
   z-index: 3;
   right: 1rem;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
-  color: #F4F9E9;
+  background-color: rgb(163, 202, 219);
   text-transform: uppercase;
+  color: #051624;
+  border-radius: 3px;
+  padding: 0 2px;
 }
 
-.studioAddress {
+.dropInText {
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+main {
+  width: 100%;
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contactInfo {
   display: flex;
   width: 100%;
   flex-direction: column;
-  line-height: 1.5;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-style: normal;
+  margin: 0;
+}
+
+.address {
+  margin: 0;
+}
+
+.phoneNum {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+// MISSION
+
+.missionContainer {
+  width: 100%;
+  text-align: left;
+} 
+
+.missionHeading {
+  padding: 0 1rem;
+  width: 100%;
+  font-family: 'Tangerine', cursive;
+  font-size: 25px;
+  background-color: rgb(163, 202, 219);
+  font-weight: bold;
+}
+
+.studioMission {
+  margin: .5rem 1rem;
+  height: 100px;
+  overflow: auto;
 }
 
 
+.studioLink {
+  width: 85%;
+  transition:all 0.4s ease;
+  font-size: 12px;
+  background: #8F8B89;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 5px 5px 15px 5px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  color: #EFF0F2;
+}
+
+.studioLink:hover {
+  background-color: #46557D;
+  color: #EFF0F2;
+  font-weight: bold;
+}
+
+
+
+// RATING
+
+.studioRating {
+  margin-left: 10px;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+}
+
+.starsOuter {
+  position: relative;
+  display: inline-block;
+}
+
+.starsInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.starsInner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #f8ce0b;
+}
+
+.starsOuter::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #ccc;
+}

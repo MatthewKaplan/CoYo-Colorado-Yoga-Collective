@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import data from '../data.js';
 import StudioCard from '../StudioCard/StudioCard.js';
-import '../StudioCard/StudioCard.css';
+import '../Styles/studioCard.scss';
 
 export default class Studios extends Component {
   constructor(props) {

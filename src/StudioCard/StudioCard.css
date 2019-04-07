@@ -30,7 +30,7 @@ a {
   font-family: 'Aladin', cursive;
   position: absolute;
   font-size: 45px;
-  color: #F4F9E9;
+  color: rgb(152, 216, 243);
   top: 0;
   left:0;
   z-index: 2;
@@ -45,7 +45,7 @@ a {
   right: 1rem;
   font-size: 23px;
   text-align: center;
-  
+
   color: #F4F9E9;
   text-transform: uppercase;
 }
@@ -56,12 +56,6 @@ a {
   font-size: 13px;
 }
 
-/* .studioCard {
-  text-align: center;
-  padding: 1rem;
-   font-family: 'Raleway', sans-serif;
-} */
-
 
 
 .studioNumber {
@@ -69,7 +63,7 @@ a {
 /*   padding: 3px; */
 }
 
-.studioLink {
+/* .studioLink {
   overflow-wrap: break-word;
   transition:all 0.4s ease;
   font-size: 14px;
@@ -79,23 +73,21 @@ a {
   margin-top: 5px;
   letter-spacing: 3px;
   border-radius: 5px;
-}
+} */
 
-.studio-link:hover {
+/* .studio-link:hover {
   color: purple;
   font-weight: bold;
   background: white;
-}
+} */
 
-.mission-container {
-  text-align: left;
-}
 
-.mission-heading {
+
+/* .mission-heading {
   font-weight: bold;
   margin: 1rem 0 0 0;
   text-transform: uppercase;
-}
+} */
 
 .studioRating {
   margin-left: 10px;
