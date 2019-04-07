@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header.js';
 import Carousel from '../Carousel/Carousel.js';
-// import TypeCard from '../TypeCard/TypeCard.js';
-// import search from '../Search/SearchFunction.js';
-// import SearchBar from '../Search/SearchBar.js';
 import Studios from '../Studios/Studios.js';
 import Search from '../Search/Search.js';
 

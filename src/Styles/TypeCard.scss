@@ -4,7 +4,7 @@
 *:after,
 *:before {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: $primary-font;
 }
 
 .typeContainer {
@@ -15,15 +15,15 @@
 }
 
 .yogaTypeCard {
-  border: 2px solid black;
+  border: 2px solid $type-border;
   border-radius: 5px;
-  box-shadow:  3px 2px 2px #284B63;
+  box-shadow:  3px 2px 2px $yoga-type-shadow;
   overflow-wrap: break-word;
   min-height: 300px;
   margin: 10px;
   max-width: 275px;
   padding: 20px;
-  background: #eff0f2;
+  background: $type-background;
 }
 
 .typeHeading {
@@ -39,5 +39,12 @@
 
 .beginner {
   margin-bottom: 0px;
+}
+
+.findStudioBtn {
+  border-radius: 4px;
+  background-color: $find-studio-btn;
+  color: $find-studio-btn-text;
+  width: 175px;
 }
 

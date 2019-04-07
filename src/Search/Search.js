@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Search.css";
+import '../Styles/Search.scss';
 
 class Search extends Component {
   constructor(props) {
@@ -25,7 +25,20 @@ class Search extends Component {
             onChange={this.handleInputChange}
             className="studioSearch" 
           />
-        </form>
+          </form>
+          {/* Buttons below need to be moved into Controls.js */}
+          <section className='btnContainer'>
+            <input 
+            value='Show all studios'
+            type='submit'
+            className='showAll'
+            />
+            <input
+            value='Sort by price' 
+            type='submit'
+            className='sort'
+            />
+          </section>
       </section>
     );
   }

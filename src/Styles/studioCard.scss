@@ -1,0 +1,169 @@
+@import 'Mixins';
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.cardsContainer {
+  align-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  justify-content: space-around;
+  margin-top: 80px;
+  padding: 20px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardContainer {
+  display: inline-block;
+  transition:all 0.3s ease;
+  border-radius: 5px;
+  border: 1px solid $card-container-border;
+  box-shadow:  3px 2px 2px $card-container-shadow;
+  background: $card-container-bkgrd;
+  min-width: 250px;
+  position: relative;
+}
+
+.cardContainer:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow:5px 5px 5px $card-container-shadow;
+}
+
+.studioImgs {
+  position: relative;
+  filter: brightness(60%);
+  max-height: 120px;
+  object-fit: cover; 
+  width: 100%;
+  z-index: 0;
+}
+
+.studioName {
+  font-family: $studio-name-font;
+  position: absolute;
+  font-size: 45px;
+  color: $studio-color;
+  top: 0;
+  left:0;
+  z-index: 2;
+  padding: .5rem 0 0 .5rem;
+}
+
+.studioFee {
+  font-family: $primary-font;
+  position: absolute;
+  top: 5px;
+  z-index: 3;
+  right: 1rem;
+  font-size: 23px;
+  text-align: center;
+  color: $studio-color;
+  text-transform: uppercase;
+}
+
+.drop-in-text {
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.cardContainer {
+  text-align: center;
+  padding: 1rem;
+  font-family: $primary-font;
+}
+
+.studioAddress {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  line-height: 1.5;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.studioNumber {
+  font-size: 20px;
+}
+
+.studioLink {
+  overflow-wrap: break-word;
+  transition:all 0.4s ease;
+  font-size: 14px;
+  background: $studio-link-bkgrd;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-top: 5px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+.studio-link:hover {
+  color: $studio-link-hover;
+  font-weight: bold;
+  background: $studio-hover-bkrd;
+}
+
+.mission-container {
+  text-align: left;
+}
+
+.mission-heading {
+  font-weight: bold;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+}
+
+.studioRating {
+  margin-left: 10px;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+}
+
+.starsOuter {
+  position: relative;
+  display: inline-block;
+}
+
+.starsInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.starsInner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: $studio-card-star-color;
+}
+
+.starsOuter::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: $stars-outer-color;
+}
+
+.studioMission {
+  margin: .5rem 0 1rem 0;
+  height: 100px;
+  overflow: auto;
+}
+

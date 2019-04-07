@@ -4,5 +4,15 @@ import { shallow } from 'enzyme';
 
 
 describe('Studios', () => {
-  
-})
+  let wrapper;
+  beforeEach(() => {
+    wrapper = shallow(
+      <Studios />
+    )
+  });
+
+it('should match snapshot', () => {
+  expect (wrapper).toMatchSnapshot();
+});
+
+});

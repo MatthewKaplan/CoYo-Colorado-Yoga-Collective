@@ -12,6 +12,7 @@ const TypeCard = (props) => {
       <p className='beginner'>{props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
       <p className="poses">Poses: </p>
       <p className='poses'>{props.commonPoses}</p>
+      <button className='findStudioBtn'>Find a studio</button>
     </section>
   )
 }
