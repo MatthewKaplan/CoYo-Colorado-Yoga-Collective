@@ -1,0 +1,43 @@
+@import 'Mixins';
+
+.studioCard {
+  display: inline-block;
+  transition:all 0.3s ease;
+  border-radius: 5px;
+  border: 1px solid #44070F;
+  box-shadow:  3px 2px 2px #284B63;
+  background: #eff0f2;
+  min-width: 250px;
+  position: relative;
+}
+
+.studioCard:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow:5px 5px 5px #284B63;
+}
+
+.studioFee {
+  font-family: 'Raleway', sans-serif;
+   position: absolute;
+  top: 5px;
+  z-index: 3;
+  right: 1rem;
+  font-size: 23px;
+  text-align: center;
+  color: #F4F9E9;
+  text-transform: uppercase;
+}
+
+.studioAddress {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+

@@ -11,7 +11,7 @@ export default class Studios extends Component {
   render() { 
 
     return (
-      <section className='cards-container'>
+      <section className='studioCardContainer'>
       {
         data.studios.map( studio => 
         <StudioCard

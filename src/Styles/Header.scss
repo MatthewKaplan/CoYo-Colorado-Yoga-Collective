@@ -1,33 +1,37 @@
 @import 'Mixins';
 
 
-// headingText co">CO</div>
-//         <div className="headingText yo">YO</div>
-//         <div className="headingText coyoHeading">Co
-
-
 .banner {
   width: 100%;
-  background: no-repeat bottom url("./colorado-mountains.jpg");
-  filter: brightness(80%);
-  color: #eff0f2;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(136, 128, 128, 0.4)), url("./images/colorado-mountains.jpg");
+  background-position: 50% 75%;
+  color: #EFF0F2;
   text-align: center;
-  padding: 100px;
+  padding: 30px 0 30px 0;
 }
 
 .co,
 .yo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  line-height: .8;
+font-family: 'Londrina Outline', cursive;
+  line-height: .9;
   font-size: 100px;
-  text-shadow: #46A5CD 3px 3px 0px, #9C9C9C 5px 5px 0px;
+  text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.459), 2px 3px 2px rgba(206, 124, 238, 0.336);
+  letter-spacing: 10px;
 }
 
 h1 {
-  margin: 0 0 75px 0;
+  width: 40%;  
+  padding: 20px; 
+  margin: 120px auto 15px auto;
+  border-top: 2px dotted #EFF0F2;
+  border-bottom: 2px dotted #EFF0F2;
 }
 
 .fullNameHeading {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'IM Fell English', serif;
+  margin: 0 auto 50px auto;
+  letter-spacing: 10px;
+  padding: 0 0 10px 0;
+  width: 70%;
+  font-size: 20px;
 }
