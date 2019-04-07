@@ -1,0 +1,851 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StudioCard should render correctly with all the information passed 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <studioCardUI
+    address="1735 E 17th Ave, Denver, CO 80218"
+    fee="$17.00"
+    image="https://i.imgur.com/w7KfQWv.jpg"
+    link="https://wholeyoga.com"
+    mission="Where body and mind become whole."
+    name="Whole Yoga"
+    phone="(303)333-9642"
+    rating={4.8}
+    roundedRating="100%"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <section
+        className="studioCards"
+      >
+        <img
+          alt="Group Yoga in studio"
+          className="studioImgs"
+          src="https://i.imgur.com/w7KfQWv.jpg"
+        />
+        <p
+          className="studioName"
+        >
+          Whole Yoga
+        </p>
+        <p
+          className="studioAddress"
+        >
+          1735 E 17th Ave, Denver, CO 80218
+        </p>
+        <p
+          className="studioNumber"
+        >
+          (303)333-9642
+        </p>
+        <div
+          className="mission-container"
+        >
+          <h4
+            className="mission-heading"
+          >
+            Mission:
+          </h4>
+          <p
+            className="studioMission"
+          >
+            Where body and mind become whole.
+          </p>
+        </div>
+        <div
+          className="inline"
+        >
+          <div
+            className="starsOuter"
+          >
+            <div
+              className="starsInner"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+          </div>
+          <p
+            className="studioRating"
+          >
+            4.8
+          </p>
+        </div>
+        <a
+          className="studioLink"
+          href="https://wholeyoga.com"
+          target="_blank"
+        >
+          Whole Yoga
+           Website
+        </a>
+        <div
+          className="studioFee"
+        >
+          $17.00
+          <p
+            className="drop-in-text"
+          >
+            drop in
+          </p>
+        </div>
+      </section>,
+      "className": "cardContainer",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="Group Yoga in studio"
+            className="studioImgs"
+            src="https://i.imgur.com/w7KfQWv.jpg"
+          />,
+          <p
+            className="studioName"
+          >
+            Whole Yoga
+          </p>,
+          <p
+            className="studioAddress"
+          >
+            1735 E 17th Ave, Denver, CO 80218
+          </p>,
+          <p
+            className="studioNumber"
+          >
+            (303)333-9642
+          </p>,
+          <div
+            className="mission-container"
+          >
+            <h4
+              className="mission-heading"
+            >
+              Mission:
+            </h4>
+            <p
+              className="studioMission"
+            >
+              Where body and mind become whole.
+            </p>
+          </div>,
+          <div
+            className="inline"
+          >
+            <div
+              className="starsOuter"
+            >
+              <div
+                className="starsInner"
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="studioRating"
+            >
+              4.8
+            </p>
+          </div>,
+          <a
+            className="studioLink"
+            href="https://wholeyoga.com"
+            target="_blank"
+          >
+            Whole Yoga
+             Website
+          </a>,
+          <div
+            className="studioFee"
+          >
+            $17.00
+            <p
+              className="drop-in-text"
+            >
+              drop in
+            </p>
+          </div>,
+        ],
+        "className": "studioCards",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Group Yoga in studio",
+            "className": "studioImgs",
+            "src": "https://i.imgur.com/w7KfQWv.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Whole Yoga",
+            "className": "studioName",
+          },
+          "ref": null,
+          "rendered": "Whole Yoga",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "1735 E 17th Ave, Denver, CO 80218",
+            "className": "studioAddress",
+          },
+          "ref": null,
+          "rendered": "1735 E 17th Ave, Denver, CO 80218",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "(303)333-9642",
+            "className": "studioNumber",
+          },
+          "ref": null,
+          "rendered": "(303)333-9642",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="mission-heading"
+              >
+                Mission:
+              </h4>,
+              <p
+                className="studioMission"
+              >
+                Where body and mind become whole.
+              </p>,
+            ],
+            "className": "mission-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Mission:",
+                "className": "mission-heading",
+              },
+              "ref": null,
+              "rendered": "Mission:",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Where body and mind become whole.",
+                "className": "studioMission",
+              },
+              "ref": null,
+              "rendered": "Where body and mind become whole.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="starsOuter"
+              >
+                <div
+                  className="starsInner"
+                  style={
+                    Object {
+                      "width": "100%",
+                    }
+                  }
+                />
+              </div>,
+              <p
+                className="studioRating"
+              >
+                4.8
+              </p>,
+            ],
+            "className": "inline",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="starsInner"
+                  style={
+                    Object {
+                      "width": "100%",
+                    }
+                  }
+                />,
+                "className": "starsOuter",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "starsInner",
+                  "style": Object {
+                    "width": "100%",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 4.8,
+                "className": "studioRating",
+              },
+              "ref": null,
+              "rendered": 4.8,
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Whole Yoga",
+              " Website",
+            ],
+            "className": "studioLink",
+            "href": "https://wholeyoga.com",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Whole Yoga",
+            " Website",
+          ],
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "$17.00",
+              <p
+                className="drop-in-text"
+              >
+                drop in
+              </p>,
+            ],
+            "className": "studioFee",
+          },
+          "ref": null,
+          "rendered": Array [
+            "$17.00",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "drop in",
+                "className": "drop-in-text",
+              },
+              "ref": null,
+              "rendered": "drop in",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="studioCards"
+        >
+          <img
+            alt="Group Yoga in studio"
+            className="studioImgs"
+            src="https://i.imgur.com/w7KfQWv.jpg"
+          />
+          <p
+            className="studioName"
+          >
+            Whole Yoga
+          </p>
+          <p
+            className="studioAddress"
+          >
+            1735 E 17th Ave, Denver, CO 80218
+          </p>
+          <p
+            className="studioNumber"
+          >
+            (303)333-9642
+          </p>
+          <div
+            className="mission-container"
+          >
+            <h4
+              className="mission-heading"
+            >
+              Mission:
+            </h4>
+            <p
+              className="studioMission"
+            >
+              Where body and mind become whole.
+            </p>
+          </div>
+          <div
+            className="inline"
+          >
+            <div
+              className="starsOuter"
+            >
+              <div
+                className="starsInner"
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              />
+            </div>
+            <p
+              className="studioRating"
+            >
+              4.8
+            </p>
+          </div>
+          <a
+            className="studioLink"
+            href="https://wholeyoga.com"
+            target="_blank"
+          >
+            Whole Yoga
+             Website
+          </a>
+          <div
+            className="studioFee"
+          >
+            $17.00
+            <p
+              className="drop-in-text"
+            >
+              drop in
+            </p>
+          </div>
+        </section>,
+        "className": "cardContainer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="Group Yoga in studio"
+              className="studioImgs"
+              src="https://i.imgur.com/w7KfQWv.jpg"
+            />,
+            <p
+              className="studioName"
+            >
+              Whole Yoga
+            </p>,
+            <p
+              className="studioAddress"
+            >
+              1735 E 17th Ave, Denver, CO 80218
+            </p>,
+            <p
+              className="studioNumber"
+            >
+              (303)333-9642
+            </p>,
+            <div
+              className="mission-container"
+            >
+              <h4
+                className="mission-heading"
+              >
+                Mission:
+              </h4>
+              <p
+                className="studioMission"
+              >
+                Where body and mind become whole.
+              </p>
+            </div>,
+            <div
+              className="inline"
+            >
+              <div
+                className="starsOuter"
+              >
+                <div
+                  className="starsInner"
+                  style={
+                    Object {
+                      "width": "100%",
+                    }
+                  }
+                />
+              </div>
+              <p
+                className="studioRating"
+              >
+                4.8
+              </p>
+            </div>,
+            <a
+              className="studioLink"
+              href="https://wholeyoga.com"
+              target="_blank"
+            >
+              Whole Yoga
+               Website
+            </a>,
+            <div
+              className="studioFee"
+            >
+              $17.00
+              <p
+                className="drop-in-text"
+              >
+                drop in
+              </p>
+            </div>,
+          ],
+          "className": "studioCards",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Group Yoga in studio",
+              "className": "studioImgs",
+              "src": "https://i.imgur.com/w7KfQWv.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Whole Yoga",
+              "className": "studioName",
+            },
+            "ref": null,
+            "rendered": "Whole Yoga",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "1735 E 17th Ave, Denver, CO 80218",
+              "className": "studioAddress",
+            },
+            "ref": null,
+            "rendered": "1735 E 17th Ave, Denver, CO 80218",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "(303)333-9642",
+              "className": "studioNumber",
+            },
+            "ref": null,
+            "rendered": "(303)333-9642",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4
+                  className="mission-heading"
+                >
+                  Mission:
+                </h4>,
+                <p
+                  className="studioMission"
+                >
+                  Where body and mind become whole.
+                </p>,
+              ],
+              "className": "mission-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mission:",
+                  "className": "mission-heading",
+                },
+                "ref": null,
+                "rendered": "Mission:",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Where body and mind become whole.",
+                  "className": "studioMission",
+                },
+                "ref": null,
+                "rendered": "Where body and mind become whole.",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="starsOuter"
+                >
+                  <div
+                    className="starsInner"
+                    style={
+                      Object {
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>,
+                <p
+                  className="studioRating"
+                >
+                  4.8
+                </p>,
+              ],
+              "className": "inline",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="starsInner"
+                    style={
+                      Object {
+                        "width": "100%",
+                      }
+                    }
+                  />,
+                  "className": "starsOuter",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "starsInner",
+                    "style": Object {
+                      "width": "100%",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 4.8,
+                  "className": "studioRating",
+                },
+                "ref": null,
+                "rendered": 4.8,
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Whole Yoga",
+                " Website",
+              ],
+              "className": "studioLink",
+              "href": "https://wholeyoga.com",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Whole Yoga",
+              " Website",
+            ],
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "$17.00",
+                <p
+                  className="drop-in-text"
+                >
+                  drop in
+                </p>,
+              ],
+              "className": "studioFee",
+            },
+            "ref": null,
+            "rendered": Array [
+              "$17.00",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "drop in",
+                  "className": "drop-in-text",
+                },
+                "ref": null,
+                "rendered": "drop in",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
