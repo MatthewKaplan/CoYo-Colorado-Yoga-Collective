@@ -10,18 +10,18 @@ const studioCardUI = ( props ) => {
 
   return (
       <article className="studioCard">
-        <header class="cardCover">
+        <header className="cardCover">
           <img src={props.image} alt="Group Yoga in studio" className="studioImg"/>
           <h4 className="studioName">{props.name}</h4>
-          <div class="studioFee">
+          <div className="studioFee">
             {props.fee} 
-            <div class="dropInText">drop in</div>
+            <div className="dropInText">drop in</div>
           </div>
         </header>
         <main className="studioInfo">
-          <address class="contactInfo">
+          <address className="contactInfo">
             <p className="address">{props.address}</p>
-            <a class="phoneNum" href="tel:3034162958">{props.phone}</a>      
+            <a className="phoneNum" href="tel:3034162958">{props.phone}</a>      
           </address>
           <div className="missionContainer">
             <h4 className="missionHeading">Mission:</h4>
