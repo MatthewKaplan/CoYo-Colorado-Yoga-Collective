@@ -1,5 +1,5 @@
 import React from 'react';
-import './StudioCard.css';
+import '../Styles/studioCard.scss';
 
 
 const studioCardUI = ( props ) => {
@@ -9,29 +9,37 @@ const studioCardUI = ( props ) => {
 };
 
   return (
-    <div className="cardContainer">
-      <section className="studioCards">
-        <img src={props.image} alt="Group Yoga in studio" className="studioImgs"/>
-        <p className="studioName">{props.name}</p>
-        <p className="studioAddress">{props.address}</p>
-        <p className="studioNumber">{props.phone}</p>
-        <div className="mission-container">
-          <h4 className="mission-heading">Mission:</h4>
-          <p className="studioMission">{props.mission}</p>
-        </div>
-        <div className="inline">
-          <div className="starsOuter">
+      <article className="studioCard">
+        <header className="cardCover">
+          <img src={props.image} alt="Group Yoga in studio" className="studioImg"/>
+          <h4 className="studioName">{props.name}</h4>
+          <div className="studioFee">
+            {props.fee} 
+            <div className="dropInText">drop in</div>
+          </div>
+        </header>
+        <main className="studioInfo">
+          <address className="contactInfo">
+            <p className="address">{props.address}</p>
+            <a className="phoneNum" href="tel:3034162958">{props.phone}</a>      
+          </address>
+          <div className="missionContainer">
+            <h4 className="missionHeading">Mission:</h4>
+            <p className="studioMission">{props.mission}</p>
+          </div>
+          <div className="inline">
+            <div className="starsOuter">
             <div className="starsInner" style={starsInnerStyle}>
             </div>
           </div>
           <p className="studioRating">{props.rating}</p>
-        </div>
-        <a href={props.link} className="studioLink" target="_blank">{props.name} Website</a>
-        <div className="studioFee">{props.fee} 
-          <p className="drop-in-text">drop in</p> 
-        </div>
-      </section>
-    </div>
+          </div>
+          <a href={props.link} className="studioLink" target="_blank">
+          learn more
+          {/* {props.name} Website */}
+            </a>
+        </main>
+      </article>
   )
 }
 
