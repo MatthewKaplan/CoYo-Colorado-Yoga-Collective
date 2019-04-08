@@ -2,9 +2,10 @@
 
 .banner {
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,.8), rgba(136, 128, 128, 0.4)), url("./images/colorado-mountains.jpg");
+  background: linear-gradient(hsla(0, 0%, 0%, 0.8),
+   hsla(0, 3%, 52%, 0.4)), url("./images/colorado-mountains.jpg");
   background-position: 50% 75%;
-  color: #EFF0F2;
+  color: hsl(220, 10%, 94%);
   text-align: center;
   padding: 30px 0 30px 0;
 }
@@ -22,8 +23,8 @@ h1 {
   width: 40%;  
   padding: 20px; 
   margin: 120px auto 15px auto;
-  border-top: 2px dotted #EFF0F2;
-  border-bottom: 2px dotted #EFF0F2;
+  border-top: 2px dotted hsl(220, 10%, 94%);
+  border-bottom: 2px dotted hsl(220, 10%, 94%);
 }
 
 .fullNameHeading {
