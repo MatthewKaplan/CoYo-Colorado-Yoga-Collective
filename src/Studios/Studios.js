@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import StudioCard from '../StudioCard/StudioCard.js';
-import '../StudioCard/StudioCard.css';
+import '../Styles/studioCard.scss';
 
 export default class Studios extends Component {
   constructor(props) {
@@ -48,7 +48,7 @@ export default class Studios extends Component {
 
   render() { 
     return (
-      <section className='cards-container'>
+      <section className='studioCardContainer'>
         {this.renderDisplay()}
       </section>
     );

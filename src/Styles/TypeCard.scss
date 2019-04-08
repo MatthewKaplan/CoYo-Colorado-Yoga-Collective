@@ -7,11 +7,17 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.typeContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 20px;
+.imageContainer {
+  width: 100%;
+  margin: 80px 50px 50px 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 150px;
+  grid-gap: 25px;
+}
+
+.typeSmall {
+  width: 90%;
 }
 
 .yogaTypeCard {
@@ -24,6 +30,7 @@
   max-width: 275px;
   padding: 20px;
   background: #eff0f2;
+  // display: none;
 }
 
 .typeHeading {

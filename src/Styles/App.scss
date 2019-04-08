@@ -1,9 +1,15 @@
 body {
   margin: 0;
-    background: #072E73;
+  background: #051624;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }

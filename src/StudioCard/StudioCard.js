@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './StudioCard.css';
+import '../Styles/studioCard.scss';
 
 export default class StudioCard extends Component {
   constructor(props) {
@@ -12,32 +12,39 @@ export default class StudioCard extends Component {
   render() {
     const starsInnerStyle = {
     width: this.props.roundedRating
-  };
+    }
 
-    return (
-      (<div className="cardContainer">
-        <section className="studioCards">
-          <img src={this.props.image} alt="Group Yoga in studio" className="studioImgs"/>
-          <p className="studioName">{this.props.name}</p>
-          <p className="studioAddress">{this.props.address}</p>
-          <p className="studioNumber">{this.props.phone}</p>
-          <div className="mission-container">
-            <h4 className="mission-heading">Mission:</h4>
+  return (
+      <article className="studioCard">
+        <header className="cardCover">
+          <img src={this.props.image} alt="Group Yoga in studio" className="studioImg"/>
+          <h4 className="studioName">{this.props.name}</h4>
+          <div className="studioFee">
+            {this.props.fee} 
+            <div className="dropInText">drop in</div>
+          </div>
+        </header>
+        <main className="studioInfo">
+          <address className="contactInfo">
+            <p className="address">{this.props.address}</p>
+            <a className="phoneNum" href="tel:3034162958">{this.props.phone}</a>      
+          </address>
+          <div className="missionContainer">
+            <h4 className="missionHeading">Mission:</h4>
             <p className="studioMission">{this.props.mission}</p>
           </div>
           <div className="inline">
             <div className="starsOuter">
-              <div className="starsInner" style={starsInnerStyle}>
-              </div>
+            <div className="starsInner" style={starsInnerStyle}>
             </div>
             <p className="studioRating">{this.props.rating}</p>
           </div>
-          <a href={this.props.link} className="studioLink" rel="noopener noreferrer" target="_blank">{this.props.name} Website</a>
-          <div className="studioFee">{this.props.fee} 
-            <p className="drop-in-text">drop in</p> 
+          <p className="studioRating">{this.props.rating}</p>
           </div>
-        </section>
-      </div>)
+          <a href={this.props.link} className="studioLink" rel="noopener noreferrer" target="_blank">Learn More</a>
+        </main>
+      </article>
     )
-  }  
+  }
 }
+
