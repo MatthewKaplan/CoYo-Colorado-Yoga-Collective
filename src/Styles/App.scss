@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background: #051624;
-  font-family: 'Raleway', sans-serif;
+  background: $body-background;
+  font-family: $primary-font;
 }
 
 a {

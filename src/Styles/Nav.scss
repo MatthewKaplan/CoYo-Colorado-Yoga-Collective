@@ -8,12 +8,12 @@ li {
 }
 
 .navBar {
-  background: #051624 ;
+  background: $nav-bar-bkrd;
   padding: 0 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #EFF0F2;
+  color: $nav-bar-color;
 }
 
 .navList{
@@ -26,7 +26,8 @@ li {
 
 .logo {
   width: 3rem;
-  border: 1px solid  #EFF0F2;
+  border: 1px solid $nav-logo-border;
+  border-radius: 5px;
   margin: 10px;
 }
 

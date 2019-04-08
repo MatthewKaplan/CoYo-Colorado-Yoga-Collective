@@ -1,0 +1,777 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StudioCard should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <studioCardUI />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <section
+        className="studioCards"
+      >
+        <img
+          alt="Group Yoga in studio"
+          className="studioImgs"
+        />
+        <p
+          className="studioName"
+        />
+        <p
+          className="studioAddress"
+        />
+        <p
+          className="studioNumber"
+        />
+        <div
+          className="mission-container"
+        >
+          <h4
+            className="mission-heading"
+          >
+            Mission:
+          </h4>
+          <p
+            className="studioMission"
+          />
+        </div>
+        <div
+          className="inline"
+        >
+          <div
+            className="starsOuter"
+          >
+            <div
+              className="starsInner"
+              style={
+                Object {
+                  "width": undefined,
+                }
+              }
+            />
+          </div>
+          <p
+            className="studioRating"
+          />
+        </div>
+        <a
+          className="studioLink"
+          target="_blank"
+        >
+           Website
+        </a>
+        <div
+          className="studioFee"
+        >
+          <p
+            className="drop-in-text"
+          >
+            drop in
+          </p>
+        </div>
+      </section>,
+      "className": "cardContainer",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="Group Yoga in studio"
+            className="studioImgs"
+          />,
+          <p
+            className="studioName"
+          />,
+          <p
+            className="studioAddress"
+          />,
+          <p
+            className="studioNumber"
+          />,
+          <div
+            className="mission-container"
+          >
+            <h4
+              className="mission-heading"
+            >
+              Mission:
+            </h4>
+            <p
+              className="studioMission"
+            />
+          </div>,
+          <div
+            className="inline"
+          >
+            <div
+              className="starsOuter"
+            >
+              <div
+                className="starsInner"
+                style={
+                  Object {
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>
+            <p
+              className="studioRating"
+            />
+          </div>,
+          <a
+            className="studioLink"
+            target="_blank"
+          >
+             Website
+          </a>,
+          <div
+            className="studioFee"
+          >
+            <p
+              className="drop-in-text"
+            >
+              drop in
+            </p>
+          </div>,
+        ],
+        "className": "studioCards",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Group Yoga in studio",
+            "className": "studioImgs",
+            "src": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "studioName",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "studioAddress",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "studioNumber",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="mission-heading"
+              >
+                Mission:
+              </h4>,
+              <p
+                className="studioMission"
+              />,
+            ],
+            "className": "mission-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Mission:",
+                "className": "mission-heading",
+              },
+              "ref": null,
+              "rendered": "Mission:",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "studioMission",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="starsOuter"
+              >
+                <div
+                  className="starsInner"
+                  style={
+                    Object {
+                      "width": undefined,
+                    }
+                  }
+                />
+              </div>,
+              <p
+                className="studioRating"
+              />,
+            ],
+            "className": "inline",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="starsInner"
+                  style={
+                    Object {
+                      "width": undefined,
+                    }
+                  }
+                />,
+                "className": "starsOuter",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "starsInner",
+                  "style": Object {
+                    "width": undefined,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "studioRating",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              " Website",
+            ],
+            "className": "studioLink",
+            "href": undefined,
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            " Website",
+          ],
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              <p
+                className="drop-in-text"
+              >
+                drop in
+              </p>,
+            ],
+            "className": "studioFee",
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "drop in",
+                "className": "drop-in-text",
+              },
+              "ref": null,
+              "rendered": "drop in",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <section
+          className="studioCards"
+        >
+          <img
+            alt="Group Yoga in studio"
+            className="studioImgs"
+          />
+          <p
+            className="studioName"
+          />
+          <p
+            className="studioAddress"
+          />
+          <p
+            className="studioNumber"
+          />
+          <div
+            className="mission-container"
+          >
+            <h4
+              className="mission-heading"
+            >
+              Mission:
+            </h4>
+            <p
+              className="studioMission"
+            />
+          </div>
+          <div
+            className="inline"
+          >
+            <div
+              className="starsOuter"
+            >
+              <div
+                className="starsInner"
+                style={
+                  Object {
+                    "width": undefined,
+                  }
+                }
+              />
+            </div>
+            <p
+              className="studioRating"
+            />
+          </div>
+          <a
+            className="studioLink"
+            target="_blank"
+          >
+             Website
+          </a>
+          <div
+            className="studioFee"
+          >
+            <p
+              className="drop-in-text"
+            >
+              drop in
+            </p>
+          </div>
+        </section>,
+        "className": "cardContainer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="Group Yoga in studio"
+              className="studioImgs"
+            />,
+            <p
+              className="studioName"
+            />,
+            <p
+              className="studioAddress"
+            />,
+            <p
+              className="studioNumber"
+            />,
+            <div
+              className="mission-container"
+            >
+              <h4
+                className="mission-heading"
+              >
+                Mission:
+              </h4>
+              <p
+                className="studioMission"
+              />
+            </div>,
+            <div
+              className="inline"
+            >
+              <div
+                className="starsOuter"
+              >
+                <div
+                  className="starsInner"
+                  style={
+                    Object {
+                      "width": undefined,
+                    }
+                  }
+                />
+              </div>
+              <p
+                className="studioRating"
+              />
+            </div>,
+            <a
+              className="studioLink"
+              target="_blank"
+            >
+               Website
+            </a>,
+            <div
+              className="studioFee"
+            >
+              <p
+                className="drop-in-text"
+              >
+                drop in
+              </p>
+            </div>,
+          ],
+          "className": "studioCards",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Group Yoga in studio",
+              "className": "studioImgs",
+              "src": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "studioName",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "studioAddress",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "studioNumber",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h4
+                  className="mission-heading"
+                >
+                  Mission:
+                </h4>,
+                <p
+                  className="studioMission"
+                />,
+              ],
+              "className": "mission-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mission:",
+                  "className": "mission-heading",
+                },
+                "ref": null,
+                "rendered": "Mission:",
+                "type": "h4",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "className": "studioMission",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="starsOuter"
+                >
+                  <div
+                    className="starsInner"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  />
+                </div>,
+                <p
+                  className="studioRating"
+                />,
+              ],
+              "className": "inline",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="starsInner"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  />,
+                  "className": "starsOuter",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "starsInner",
+                    "style": Object {
+                      "width": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "className": "studioRating",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                " Website",
+              ],
+              "className": "studioLink",
+              "href": undefined,
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              " Website",
+            ],
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                <p
+                  className="drop-in-text"
+                >
+                  drop in
+                </p>,
+              ],
+              "className": "studioFee",
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "drop in",
+                  "className": "drop-in-text",
+                },
+                "ref": null,
+                "rendered": "drop in",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

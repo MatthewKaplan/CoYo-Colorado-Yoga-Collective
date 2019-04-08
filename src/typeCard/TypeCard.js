@@ -45,7 +45,7 @@ export class TypeCard extends Component {
       <p className='beginner'>{this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
       <p className='poses'>Poses: </p>
       <p className='poses'>{this.props.commonPoses}</p>
-      <input onClick={this.handleChange} type="submit" value="Find Studios" id={this.props.id} />
+      <input onClick={this.handleChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
     </section>)
     )
   }
