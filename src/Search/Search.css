@@ -1,12 +1,11 @@
 .searchStudioContainer {
-  display: flex;
-  height: 40px;
-  margin: 0 auto;
-  padding: 0.5rem;
-  width: 275px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*width: 500px;*/
 }
 
 .searchStudio {
+  width: 300px;
   display: inline-flex;
   flex: 1 1 400px;
   overflow: hidden;
@@ -20,9 +19,9 @@
 
 .studioSearch {
   border: 1px solid #538ac5;
-  flex: 1;
   font-size: 16px;
   padding: 0.2rem 0.2rem 0.2rem 1rem;
+  width: 300px;
 }
 
 .studioSearch:focus {
@@ -30,3 +29,19 @@
   border: 1px solid black;
   outline: none;
 }
+
+input {
+  text-align: left;
+}
+
+.clearFilters {
+  text-align: left;
+  margin-right: 100px;
+  padding-left: 100px;
+  border: 0px;
+  width: 275px;
+}
+
+
+
+
