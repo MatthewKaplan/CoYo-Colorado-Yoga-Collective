@@ -2,26 +2,35 @@
 
 .banner {
   width: 100%;
-  background: no-repeat bottom url("./colorado-mountains.jpg");
-  filter: brightness(80%);
-  color: $banner-color;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(136, 128, 128, 0.4)), url("./images/colorado-mountains.jpg");
+  background-position: 50% 75%;
+  color: #EFF0F2;
   text-align: center;
-  padding: 100px;
+  padding: 30px 0 30px 0;
 }
 
 .co,
 .yo {
-  font-family: $primary-font;
-  font-weight: 800;
-  line-height: .8;
+font-family: $heading-font;
+  line-height: .9;
   font-size: 100px;
-  text-shadow: $coyo-text-shadow1 3px 3px 0px, $coyo-text-shadow2 5px 5px 0px;
+  text-shadow: 4px 6px 4px $coyo-text-shadow1, 2px 3px 2px $coyo-text-shadow2;
+  letter-spacing: 10px;
 }
 
 h1 {
-  margin: 0 0 75px 0;
+  width: 40%;  
+  padding: 20px; 
+  margin: 120px auto 15px auto;
+  border-top: 2px dotted #EFF0F2;
+  border-bottom: 2px dotted #EFF0F2;
 }
 
 .fullNameHeading {
-  font-family: $heading-font;
+  font-family: $full-name-heading;
+  margin: 0 auto 50px auto;
+  letter-spacing: 10px;
+  padding: 0 0 10px 0;
+  width: 70%;
+  font-size: 20px;
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../Styles/Header.scss';
 // import Nav from './Nav'
 
+
 export default function Header(props) {
   return (
     <header className="pageHeader">
@@ -11,7 +12,11 @@ export default function Header(props) {
           <div className="headingText co">CO</div>
           <div className="headingText yo">YO</div>
         </h1>
-        <h2 className="fullNameHeading">Colorado Yoga Connection</h2>
+        <h2 className="fullNameHeading">colorado yoga collective</h2>
+      </section>
+      <section className="temp">
+        
+
       </section>
     </header>
   )

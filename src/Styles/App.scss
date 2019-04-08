@@ -1,9 +1,15 @@
 body {
   margin: 0;
   background: $body-background;
+  font-family: $primary-font;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }

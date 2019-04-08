@@ -10,13 +10,33 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      searchResults: [],
       studios: [],
-      yogaTypes: []
+      yogaTypes: [],
+      rendered: []
     };
   }
 
+  componentWillMount() {
+    localStorage.getItem('studiosRendered') && this.setState({
+      rendered: JSON.parse(localStorage.getItem('studiosRendered'))
+    })
+    localStorage.getItem('types') && this.setState({
+      yogaTypes: JSON.parse(localStorage.getItem('types'))
+    })
+    localStorage.getItem('studios') && this.setState({
+      studios: JSON.parse(localStorage.getItem('studios'))
+    })
+  }
+
   componentDidMount(){
+    if(!localStorage.getItem('studiosRendered')){
+      this.fetchData();
+    } else {
+      console.log('Using Data From Local Storage')
+    }
+  }
+
+  fetchData(){
     fetch('https://fe-apps.herokuapp.com/api/v1/whateverly/1901/SallyHaefling/studios')
       .then(response => response.json())
       .then(yogaStudios => this.setState( {studios: yogaStudios.studios} ))
@@ -27,18 +47,14 @@ export default class App extends Component {
       .catch(err => console.log(err))
   }
 
-  handleSearch = (searchQuery) => {
-    const results = [];
-    let query = searchQuery.toLowerCase();
-  
-    let matchingStudios = this.state.studios.filter(studio => studio.name.toLowerCase().includes(query));
-    matchingStudios.forEach(match => results.push(match));
-    this.setState(
-      {
-        searchResults: results
-      },
-      console.log('line44 search results: ', this.state.searchResults)
-    );
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem('studiosRendered', JSON.stringify(nextState.rendered));
+    localStorage.setItem('types', JSON.stringify(nextState.yogaTypes));
+    localStorage.setItem('studios', JSON.stringify(nextState.studios));
+  }
+
+  storeRendered = (cardsDisplayed) => {
+    this.setState({rendered: cardsDisplayed})
   }
 
   render() {
@@ -46,12 +62,19 @@ export default class App extends Component {
     return (
       <section className="App">
         <Header />
-        <Carousel yogaTypes={this.state.yogaTypes}/>
-        <Search 
-        handleSearch={this.handleSearch}
+        <Carousel 
         studios={this.state.studios}
+        yogaTypes={this.state.yogaTypes}
+        storeRendered={this.storeRendered}
         />
-        <Studios studios={this.state.studios}/>
+        <Search 
+        studios={this.state.studios}
+        storeRendered={this.storeRendered}
+        />
+        <Studios 
+        studios={this.state.studios}
+        rendered={this.state.rendered}
+        />
       </section>
     );
     

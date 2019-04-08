@@ -1,34 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Aladin|Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|IM+Fell+Double+Pica|IM+Fell+English:400,400i|Tangerine');
 @import url('https://fonts.googleapis.com/css?family=Aladin|Berkshire+Swash|Raleway:400,400i,800');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
 
+// <<<<<<< HEAD
 $primary-font: 'Raleway', sans-serif;
-$heading-font: 'Berkshire Swash', cursive;
-$studio-name-font: 'Aladin', cursive;
+$heading-font: 'Londrina Outline', cursive;
+$studio-name-font: 'Tangerine', cursive;
+$full-name-heading: 'IM Fell English', serif;
 
 $studio-search-border: hsl(211, 50%, 55%);
 $studio-search-focus: hsl(0, 0%, 0%);
 $show-all-btn: hsla(231, 48%, 56%, 1);
 $show-btn-text: hsla(195, 48%, 88%, 1);
-$nav-bar-bkrd: hsl(218, 25%, 69%);
-$nav-bar-color: hsl(218, 89%, 24%);
-$nav-logo-border: hsl(218, 89%, 24%);
+$nav-bar-bkrd: #051624;
+$nav-bar-color: #EFF0F2;
+$nav-logo-border: #EFF0F2;
 $find-studio-btn: hsl(248, 49%, 37%);
-$banner-color: hsl(220, 10%, 94%);
-$coyo-text-shadow1: hsl(198, 57%, 54%);
-$coyo-text-shadow2: hsl(0, 0%, 61%);
+$coyo-text-shadow1: rgba(0, 0, 0, 0.459);
+$coyo-text-shadow2: rgba(206, 124, 238, 0.336);
 $card-container-shadow: hsl(204, 42%, 27%);
 $card-container-bkgrd: hsl(220, 10%, 94%);
 $card-container-border: hsl(352, 81%, 15%);
-$studio-color: hsl(79, 57%, 95%);
-$studio-link-bkgrd: hsl(0, 0%, 83%);
-$studio-link-hover: hsl(300, 100%, 25%);
-$studio-hover-bkrd: hsl(0, 0%, 100%);
+$studio-color: rgb(163, 202, 219);
+$studio-link-bkgrd: #8F8B89;
+$studio-link-hover: #EFF0F2;
+$studio-hover-bkrd: #46557D;
 $studio-card-star-color: hsl(49, 94%, 51%);
 $stars-outer-color: hsl(0, 0%, 80%);
 $find-studio-btn-text: hsla(195, 0%, 100%, 1);
-$body-background: hsl(218, 89%, 24%);
+$body-background: #051624;
 $yoga-type-shadow: hsl(204, 42%, 27%);
-$type-background: hsla(195, 0%, 100%, 1);
+$type-background: #eff0f2;
 $type-border: hsl(0, 0%, 0%);
 
+// =======
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Aladin', cursive;
+// font-family: 'Berkshire Swash', cursive;
+
+// font-family: 'Tangerine', cursive;
+// font-family: 'IM Fell Double Pica', serif;
+// font-family: 'IM Fell English', serif;
+// font-family: 'Bilbo Swash Caps', cursive;
+// >>>>>>> master

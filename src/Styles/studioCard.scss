@@ -1,4 +1,5 @@
 @import 'Mixins';
+// <<<<<<< HEAD
 *,
 *:after,
 *:before {
@@ -39,27 +40,66 @@ a {
   box-shadow:5px 5px 5px $card-container-shadow;
 }
 
-.studioImgs {
+.studioCard {
+  display: inline-block;
+  transition:all 0.3s ease;
+  border-radius: 5px;
+  border: 1px solid #8C8886;
+  box-shadow:  3px 2px 2px #284B63;
+  background: rgb(225, 232, 238);
+  min-width: 250px;
   position: relative;
-  filter: brightness(60%);
-  max-height: 120px;
+  color: #302C2C;
+}
+
+.studioCard:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow:5px 5px 5px #284B63;
+}
+
+.studioImg {
+  position: relative;
+  filter: brightness(30%);
+  max-height: 150px;
   object-fit: cover; 
   width: 100%;
   z-index: 0;
 }
 
+// <<<<<<< HEAD
 .studioName {
   font-family: $studio-name-font;
   position: absolute;
   font-size: 45px;
   color: $studio-color;
   top: 0;
-  left:0;
-  z-index: 2;
-  padding: .5rem 0 0 .5rem;
+  left: 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.61);
+  line-height: 1;
+  bottom: 0;
+// // =======
+.cardCover {
+  position: relative;
+}
+
+// .studioName {
+//   font-family: 'Tangerine', cursive;
+//   position: absolute;
+//   font-size: 45px;
+//   color: rgb(163, 202, 219);
+//   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.61);
+//   line-height: 1;
+//   left: 0;
+//   bottom: 0;
+// >>>>>>> master
+  // z-index: 2;
+  // padding: .5rem 0 0 .5rem;
 }
 
 .studioFee {
+// <<<<<<< HEAD
   font-family: $primary-font;
   position: absolute;
   top: 5px;
@@ -96,33 +136,125 @@ a {
   font-size: 20px;
 }
 
-.studioLink {
-  overflow-wrap: break-word;
-  transition:all 0.4s ease;
+// .studioLink {
+//   overflow-wrap: break-word;
+//   transition:all 0.4s ease;
+//   font-size: 14px;
+//   background: $studio-link-bkgrd;
+//   text-transform: uppercase;
+//   padding: 5px;
+//   margin-top: 5px;
+//   letter-spacing: 3px;
+//   border-radius: 5px;
+// }
+
+// .studio-link:hover {
+//   color: $studio-link-hover;
+//   font-weight: bold;
+//   background: $studio-hover-bkrd;
+// }
+
+// .mission-container {
+//   text-align: left;
+// }
+
+// .mission-heading {
+//   font-weight: bold;
+//   margin: 1rem 0 0 0;
+//   text-transform: uppercase;
+// }
+// =======
+//   font-family: 'Raleway', sans-serif;
+//    position: absolute;
+//   top: 5px;
+//   z-index: 3;
+//   right: 1rem;
+//   font-size: 18px;
+//   text-align: center;
+//   background-color: rgb(163, 202, 219);
+//   text-transform: uppercase;
+//   color: #051624;
+//   border-radius: 3px;
+//   padding: 0 2px;
+// }
+
+// .dropInText {
+//   letter-spacing: 1px;
+//   font-size: 12px;
+// }
+
+main {
+  width: 100%;
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: $primary-font;
+}
+
+.contactInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
+  font-style: normal;
+  margin: 0;
+}
+
+.address {
+  margin: 0;
+}
+
+.phoneNum {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+// // MISSION
+
+.missionContainer {
+  width: 100%;
+  text-align: left;
+} 
+
+.missionHeading {
+  padding: 0 1rem;
+  width: 100%;
+  font-family: 'Tangerine', cursive;
+  font-size: 25px;
+  background-color: rgb(163, 202, 219);
+  font-weight: bold;
+}
+
+.studioMission {
+  margin: .5rem 1rem;
+  height: 100px;
+  overflow: auto;
+}
+
+
+.studioLink {
+  width: 85%;
+  transition:all 0.4s ease;
+  font-size: 12px;
   background: $studio-link-bkgrd;
   text-transform: uppercase;
-  padding: 5px;
-  margin-top: 5px;
+  padding: 10px;
+  margin: 5px 5px 15px 5px;
   letter-spacing: 3px;
   border-radius: 5px;
-}
-
-.studio-link:hover {
   color: $studio-link-hover;
-  font-weight: bold;
-  background: $studio-hover-bkrd;
 }
 
-.mission-container {
-  text-align: left;
+.studioLink:hover {
+  background-color: $studio-hover-bkrd;
+  font-weight: bold;
 }
 
-.mission-heading {
-  font-weight: bold;
-  margin: 1rem 0 0 0;
-  text-transform: uppercase;
-}
+
+
+// // RATING
+// >>>>>>> master
 
 .studioRating {
   margin-left: 10px;
@@ -151,13 +283,18 @@ a {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
+// <<<<<<< HEAD
   color: $studio-card-star-color;
+// =======
+//   color: #f8ce0b;
+// >>>>>>> master
 }
 
 .starsOuter::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
+// <<<<<<< HEAD
   color: $stars-outer-color;
 }
 
@@ -167,3 +304,7 @@ a {
   overflow: auto;
 }
 
+// =======
+//   color: #ccc;
+// }
+// >>>>>>> master
