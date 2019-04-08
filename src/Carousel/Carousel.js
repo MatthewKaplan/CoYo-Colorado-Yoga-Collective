@@ -16,7 +16,7 @@ export default class Carousel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visibleCards: []
+      
     }
   }
 
@@ -34,16 +34,18 @@ export default class Carousel extends Component {
           <img src={vinyasa} alt="vinyasa" className="vinyasa typeSmall" />
           <img src={kundalini} alt="kundalini" className="kundalini typeSmall" />
           <img src={yin} alt="yin" className="yin typeSmall" />
-
         </article>
         {
           this.props.yogaTypes.map(yogaType =>
             <TypeCard
               name={yogaType.name}
+              id={yogaType.typeId}
               purpose={yogaType.purpose}
               beginnerFriendly={yogaType.beginnerFriendly}
               propsUsed={yogaType.propsUsed}
               commonPoses={yogaType.commonPoses.map(poses => <p> {poses} </p>)}
+              studios={this.props.studios}
+              storeRendered={this.props.storeRendered}
             />
           )
         }

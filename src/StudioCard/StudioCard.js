@@ -1,46 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react'
 import '../Styles/studioCard.scss';
 
+export default class StudioCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
 
-const studioCardUI = ( props ) => {
-  
-  const starsInnerStyle = {
-  width: props.roundedRating
-};
+    }
+  }
+
+  render() {
+    const starsInnerStyle = {
+    width: this.props.roundedRating
+    }
 
   return (
       <article className="studioCard">
         <header className="cardCover">
-          <img src={props.image} alt="Group Yoga in studio" className="studioImg"/>
-          <h4 className="studioName">{props.name}</h4>
+          <img src={this.props.image} alt="Group Yoga in studio" className="studioImg"/>
+          <h4 className="studioName">{this.props.name}</h4>
           <div className="studioFee">
-            {props.fee} 
+            {this.props.fee} 
             <div className="dropInText">drop in</div>
           </div>
         </header>
         <main className="studioInfo">
           <address className="contactInfo">
-            <p className="address">{props.address}</p>
-            <a className="phoneNum" href="tel:3034162958">{props.phone}</a>      
+            <p className="address">{this.props.address}</p>
+            <a className="phoneNum" href="tel:3034162958">{this.props.phone}</a>      
           </address>
           <div className="missionContainer">
             <h4 className="missionHeading">Mission:</h4>
-            <p className="studioMission">{props.mission}</p>
+            <p className="studioMission">{this.props.mission}</p>
           </div>
           <div className="inline">
             <div className="starsOuter">
             <div className="starsInner" style={starsInnerStyle}>
             </div>
+            <p className="studioRating">{this.props.rating}</p>
           </div>
-          <p className="studioRating">{props.rating}</p>
+          <p className="studioRating">{this.props.rating}</p>
           </div>
-          <a href={props.link} className="studioLink" target="_blank">
-          learn more
-          {/* {props.name} Website */}
-            </a>
+          <a href={this.props.link} className="studioLink" rel="noopener noreferrer" target="_blank">Learn More</a>
         </main>
       </article>
-  )
+    )
+  }
 }
 
-export default studioCardUI;
