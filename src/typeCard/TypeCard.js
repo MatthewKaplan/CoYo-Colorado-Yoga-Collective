@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Styles/TypeCard.scss';
+import '../Styles/_TypeCard.scss';
 
 
 export class TypeCard extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../Styles/Search.scss';
+import '../Styles/_Search.scss';
 
 class Search extends Component {
   constructor(props) {
@@ -26,26 +26,7 @@ class Search extends Component {
     e.preventDefault()
     let userInput = this.state.searchQuery.trim().toUpperCase();
     let result = this.findMatchingStudio(userInput);
-
     this.props.storeRendered(result)
-  }
-
-  displayAllStudios = (e) => {
-    e.preventDefault()
-    this.props.storeRendered(this.props.studios)
-  }
-
-  priceFilter = () => {
-    let ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
-    let lastElement = ordered.pop();
-    return ordered.unshift(lastElement);
-  }
-
-  sortPrice = (e) => {
-    e.preventDefault()
-    let filteredPrice = this.priceFilter();
-    
-    this.props.storeRendered(filteredPrice);
   }
 
   render() {
@@ -60,21 +41,6 @@ class Search extends Component {
             className="studioSearch" 
           />
         </form>
-          {/* Buttons below need to be moved into Controls.js */}
-          <section className='btnContainer'>
-            <input 
-            value='Show all studios'
-            type='submit'
-            onClick={this.displayAllStudios}
-            className='showAll'
-            />
-            <input
-            value='Sort by price' 
-            type='submit'
-            onClick={this.sortPrice}
-            className='sort'
-            />
-          </section>
       </section>
     );
   }
