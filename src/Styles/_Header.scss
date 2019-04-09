@@ -5,6 +5,7 @@
   background: linear-gradient(hsla(0, 0%, 0%, 0.3),
    hsla(0, 3%, 52%, 0.4)), url("./images/colorado-mountains.jpg");
   background-position: 50% 75%;
+  background-size: cover;
   color: hsl(220, 10%, 94%);
   text-align: center;
   padding: 30px 0 30px 0;
@@ -12,7 +13,7 @@
 
 .co,
 .yo {
-font-family: $heading-font;
+  font-family: $heading-font;
   line-height: .9;
   font-size: 100px;
   text-shadow: 4px 6px 4px $coyo-text-shadow1, 2px 3px 2px $coyo-text-shadow2;
