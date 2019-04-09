@@ -37,7 +37,12 @@ it ('should have default state', () => {
 });
 
 it('should take text from input box to filter studios when handleInputChange is invoked', () => {
-  wrapper.find('.studioSearch').simulate('change', {target: {value: "Whole Yoga"}});
+  wrapper.find('.studioSearch').simulate('keypress', {key: 'Enter'}, {target: {value: "Whole Yoga"}});
 })
+
+//test handleInput
+//test findMatchingStudio
+//Fix handleInputChange test above - not working
+//test render
 
 });
