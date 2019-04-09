@@ -15,4 +15,7 @@ it('should match snapshot', () => {
   expect (wrapper).toMatchSnapshot();
 });
 
+//test render 
+//test renderDisplay
+
 });

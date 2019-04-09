@@ -34,4 +34,6 @@ describe('TypeCard', () => {
 
 
 
+
+
 });
