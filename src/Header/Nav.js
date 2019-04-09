@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Styles/Nav.scss';
+import '../Styles/_Nav.scss';
 import logo from './logo.png';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 export default function Nav(props) {
