@@ -1,3 +1,5 @@
+# CoYo: Colorado Yoga Collective
+
 ## Abstract:
 
 As a group project, we wanted to create an app for users to find their favorite yoga studios (based off of yoga type; ie: hatha, vinyasa) and all of the drop-in fees so that they had everything in one place. We created functionality for displaying studios based off of yoga type, sorting studios by price, display all studios, and a search bar to search for a specific yoga studio upon hitting the return key. 
