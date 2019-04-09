@@ -28,7 +28,7 @@ describe('TypeCard', () => {
       />
     )
   });
-  it.only('should render correctly with all the information passed', () => {
+  it('should render correctly with all the information passed', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
