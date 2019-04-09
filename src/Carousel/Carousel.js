@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TypeCard from '../TypeCard/TypeCard.js';
-import '../Styles/Carousel.scss';
+import '../Styles/_Carousel.scss';
 import anusara from './ANUSARA.png'
 import ashtanga from './ASHTANGA.png'
 import bikram from './BIKRAM.png'

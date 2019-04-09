@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../Styles/studioCard.scss';
+import '../Styles/_studioCard.scss';
 
 export default class StudioCard extends Component {
   constructor(props) {

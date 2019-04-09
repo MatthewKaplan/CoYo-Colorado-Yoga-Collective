@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Styles/Main.scss';
 import Header from '../Header/Header.js';
 import Carousel from '../Carousel/Carousel.js';
 import Studios from '../Studios/Studios.js';
