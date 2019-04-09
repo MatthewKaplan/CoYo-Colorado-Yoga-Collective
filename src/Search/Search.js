@@ -36,18 +36,9 @@ class Search extends Component {
   }
 
   priceFilter = () => {
-    let newArr = []
-
-    return this.props.studios.filter((studio) => { 
-      let price = studio.dropInFee;
-      while(price.charAt(0) === '$') {
-       price = price.substr(1);
-      }
-      price = price.replace('Suggested donation', '00.00')
-      let parsedPrice = parseInt(price);
-      newArr.push(parsedPrice)
-      return newArr.sort((a,b) => (a - b));
-    })
+    let ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
+    let lastElement = ordered.pop();
+    return ordered.unshift(lastElement);
   }
 
   sortPrice = (e) => {
