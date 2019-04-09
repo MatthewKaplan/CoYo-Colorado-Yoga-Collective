@@ -1,23 +1,23 @@
-// @import 'Mixins';
+@import 'Mixins';
 
-// .btnContainer {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 10px;
-// }
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
 
-// .showAll {
-//   flex-wrap: nowrap;
-//   font-family: $primary-font;
-//   width: 70px;
-//   background-color: $show-all-btn;
-//   border-radius: 4px;
-//   color: $show-btn-text;
-//   margin-bottom: 10px;
-// }
+.showAll {
+  background-color: $show-all-btn;
+  border-radius: 4px;
+  color: $show-btn-text;
+  margin-bottom: 10px;
+  width: 50%;
+}
 
-// .sort {
-//   background-color: $show-all-btn;
-//   border-radius: 4px;
-//   color: $show-btn-text;
-// }
+.sort {
+  background-color: $show-all-btn;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: $show-btn-text;
+  width: 50%;
+}
