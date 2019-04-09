@@ -3,6 +3,7 @@ import Header from '../Header/Header.js';
 import Carousel from '../Carousel/Carousel.js';
 import Studios from '../Studios/Studios.js';
 import Search from '../Search/Search.js';
+import Controls from '../Controls/Controls.js';
 
 import '../Styles/Main.scss';
 
@@ -68,6 +69,10 @@ export default class App extends Component {
         storeRendered={this.storeRendered}
         />
         <Search 
+        studios={this.state.studios}
+        storeRendered={this.storeRendered}
+        />
+        <Controls 
         studios={this.state.studios}
         storeRendered={this.storeRendered}
         />

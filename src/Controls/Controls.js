@@ -1,34 +1,51 @@
 import React, { Component } from 'react';
-// import '../Styles/Controls.scss';
+import '../Styles/Controls.scss';
 
-// export default class Controls extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
+class Controls extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
 
-//     }
-//   }
+    }
+  }
 
-//   //create methods for when the user clicks the button:
-//     //getAllStudios
-//     //sortByPrice
+  displayAllStudios = (e) => {
+    e.preventDefault()
+    this.props.storeRendered(this.props.studios)
+  }
 
-//   render() {
-//     return  (
-//       <section className='btnContainer'>
-//       <input 
-//       value='Show all studios'
-//       type='submit'
-//       className='showAll'
-//       // onClick={this.getAllStudios}
-//       />
-//       <input
-//       value='Sort by price' 
-//       type='submit'
-//       className='sort'
-//       // onClick={this.sortByPrice}
-//       />
-//     </section>
-//     )
-//   }
-// }
+  priceFilter = () => {
+    let ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
+    let lastElement = ordered.pop();
+    return ordered.unshift(lastElement);
+  }
+
+  sortByPrice = (e) => {
+    e.preventDefault()
+    let filteredPrice = this.priceFilter();
+    
+    this.props.storeRendered(filteredPrice);
+  }
+
+
+  render() {
+    return  (
+      <section className='btnContainer'>
+          <input 
+          value='Show all studios'
+          type='submit'
+          className='showAll'
+          onClick={this.displayAllStudios}
+          />
+          <input
+          value='Sort by price' 
+          type='submit'
+          className='sort'
+          onClick={this.sortByPrice}
+          />
+      </section>
+    )
+  }
+}
+
+export default Controls;

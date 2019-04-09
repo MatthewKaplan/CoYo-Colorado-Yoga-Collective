@@ -30,23 +30,23 @@ class Search extends Component {
     this.props.storeRendered(result)
   }
 
-  displayAllStudios = (e) => {
-    e.preventDefault()
-    this.props.storeRendered(this.props.studios)
-  }
+  // displayAllStudios = (e) => {
+  //   e.preventDefault()
+  //   this.props.storeRendered(this.props.studios)
+  // }
 
-  priceFilter = () => {
-    let ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
-    let lastElement = ordered.pop();
-    return ordered.unshift(lastElement);
-  }
+  // priceFilter = () => {
+  //   let ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
+  //   let lastElement = ordered.pop();
+  //   return ordered.unshift(lastElement);
+  // }
 
-  sortPrice = (e) => {
-    e.preventDefault()
-    let filteredPrice = this.priceFilter();
+  // sortPrice = (e) => {
+  //   e.preventDefault()
+  //   let filteredPrice = this.priceFilter();
     
-    this.props.storeRendered(filteredPrice);
-  }
+  //   this.props.storeRendered(filteredPrice);
+  // }
 
   render() {
     return (
@@ -61,20 +61,7 @@ class Search extends Component {
           />
         </form>
           {/* Buttons below need to be moved into Controls.js */}
-          <section className='btnContainer'>
-            <input 
-            value='Show all studios'
-            type='submit'
-            onClick={this.displayAllStudios}
-            className='showAll'
-            />
-            <input
-            value='Sort by price' 
-            type='submit'
-            onClick={this.sortPrice}
-            className='sort'
-            />
-          </section>
+          
       </section>
     );
   }
