@@ -11,7 +11,17 @@ describe('Controls', () => {
   });
 
 it('should match snapshot', () => {
-  expect (wrapper).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('should render a show all button', () => {
+  const showAllBtn = wrapper.find("[data-test='show-all-button']");
+  expect(showAllBtn.length).toBe(1);
+});
+
+it('should render a sort by price button', () => {
+  const sortByPrice = wrapper.find("[data-test='sort-price-button']");
+  expect(sortByPrice.length).toBe(1);
 });
 
 //test methods on click events

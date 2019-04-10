@@ -1,9 +1,10 @@
 import React from 'react';
-import DisplayMessage from './DisplayMessage.js';
+import DisplayMessage from './DisplayMessage';
 import { shallow } from 'enzyme';
 
 describe('DisplayMessage', () => {
   let wrapper;
+  
   beforeEach(() => {
     wrapper = shallow(
       <DisplayMessage />

@@ -26,23 +26,28 @@ describe('Search', () => {
     )
   });
 
-it('should match snapshot', () => {
-  expect (wrapper).toMatchSnapshot();
-});
-
-it ('should have default state', () => {
-  expect(wrapper.state()).toEqual({
-    searchQuery: ''
+  it('should match snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
   });
-});
 
-it('should take text from input box to filter studios when handleInputChange is invoked', () => {
-  wrapper.find('.studioSearch').simulate('keypress', {key: 'Enter'}, {target: {value: "Whole Yoga"}});
-})
+  it('should have default state', () => {
+    const initialSearchQueryState = wrapper.state('searchQuery');
+    expect(initialSearchQueryState).toEqual('')
+  });
 
-//test handleInput
-//test findMatchingStudio
-//Fix handleInputChange test above - not working
-//test render
+  it('should render an input', () => {
+    const searchInput = wrapper.find("[data-test='search-input']");
+    expect(searchInput.length).toBe(1);
+  })
+
+  it('should take text from input box to filter studios when handleInputChange is invoked', () => {
+    const searchInput = wrapper.find("[data-test='search-input']");
+    searchInput.simulate('keypress', {key: 'Enter'}, {target: {value: "Whole Yoga"}});
+  })
+
+  //test handleInput
+  //test findMatchingStudio
+  //Fix handleInputChange test above - not working
+  //test render
 
 });

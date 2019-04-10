@@ -45,12 +45,14 @@ class Controls extends Component {
           type='submit'
           className='showAll'
           onClick={this.displayAllStudios}
+          data-test="show-all-button"
           />
           <input
           value='Sort by price' 
           type='submit'
           className='sort'
           onClick={this.sortByPrice}
+          data-test="sort-price-button"
           />
       </section>
     )

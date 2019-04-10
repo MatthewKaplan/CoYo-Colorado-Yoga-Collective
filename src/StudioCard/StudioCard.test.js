@@ -1,5 +1,5 @@
 import React from 'react';
-import StudioCard from './studioCard';
+import StudioCard from './StudioCard';
 import { shallow } from 'enzyme';
 
 const mockStudio = {
