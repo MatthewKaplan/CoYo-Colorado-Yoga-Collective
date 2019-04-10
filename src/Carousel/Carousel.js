@@ -17,7 +17,7 @@ export default class Carousel extends Component {
   //   console.log(this.state.typesWithImages)
   // }
 
-
+  image: "/static/media/ANUSARA.1d0f525f.png"
 
   render() {
     return (
@@ -40,7 +40,7 @@ export default class Carousel extends Component {
         {
           this.props.yogaTypes.map(yogaType =>
             <TypeCard
-            // image={yogaType.image}
+            image={yogaType.image}
             name={yogaType.name}
             id={yogaType.typeId}
             purpose={yogaType.purpose}

@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
 import '../Styles/_TypeCard.scss';
-import anusara from '../Styles/images/ANUSARA.png'
-import ashtanga from '../Styles/images/ASHTANGA.png'
-import bikram from '../Styles/images/BIKRAM.png'
-import hatha from '../Styles/images/HATHA.png'
-import iyengar from '../Styles/images/IYENGAR.png'
-import jivamukti from '../Styles/images/JIVAMUKTI.png'
-import kundalini from '../Styles/images/KUNDALINI.png'
-import vinyasa from '../Styles/images/VINYASA.png'
-import yin from '../Styles/images/YIN.png'
-import restorative from '../Styles/images/RESTORATIVE.png'
+
 
 
 export class TypeCard extends Component {
@@ -67,11 +58,13 @@ export class TypeCard extends Component {
   }
 
   render() {
-    let typeName = this.props.name.toLowerCase();
-    console.log(typeName)
+    // {this.state.typesWithImages[0] && console.log(anusara, this.state.typesWithImages[0].image)}
+    // let typeName = this.props.name.toLowerCase();
+    // console.log(typeName)
   return (
     (<article className="yogaTypeCard scaleUpCenter">
-      <img src={ `${this.props.name.toLowerCase()}` } alt={this.props.name} className="typeSmall"/>
+      {this.props.types[0] && <img src={this.props.image } alt={this.props.name} className="typeSmall"/>}
+      {/* <img src={ `${this.props.name.toLowerCase()}` } alt={this.props.name} className="typeSmall"/> */}
       <h4 className='typeHeading heading'>{this.props.name}</h4>
       <h5 className='purposeHeading heading'>Purpose</h5>
       <p className='purpose'>{this.props.purpose}</p>
