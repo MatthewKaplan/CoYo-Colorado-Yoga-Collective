@@ -1,0 +1,13 @@
+@import 'Mixins';
+
+.displayMessageContainer {
+  border: 20px solid $studio-name-font;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.emptyTypeText {
+  font-family: $studio-name-font;
+  color: $studio-color;
+  font-size: 125px;
+}

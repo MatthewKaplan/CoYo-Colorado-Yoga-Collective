@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import '../Styles/_TypeCard.scss';
 
-
 export class TypeCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visibleCards: [],
       typeId: 0
     }
   }
@@ -29,8 +27,11 @@ export class TypeCard extends Component {
     e.preventDefault()
     let userInput = parseInt(e.target.id);
     if(userInput === 9 || userInput === 10) {
-      alert("Sorry but this style of yoga is currently not being offered at any studios, please check back or choose another style.")
+      let message = "Sorry but the style of yoga you choose is not currently being offered at any studios, please check back or choose another style.";
+      this.props.storeEmptyType(message)
     } else {
+      let message = "";
+      this.props.storeEmptyType(message)
       let result = this.filterStudioId(userInput);
       this.props.storeRendered(result)
     }
