@@ -1,8 +1,10 @@
 @import 'Mixins';
 
 .typeContainer {
- margin: 0;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+    background-image: linear-gradient(-180deg, #353333
+ 9%,#1F6B87 100%);
+  display: flex;
+  min-width: 100%;
+  min-height: 400px;
+  overflow-x: auto;
 }

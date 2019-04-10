@@ -71,21 +71,15 @@ export default class App extends Component {
   addImgs = () => {
     const orderedTypes = this.state.yogaTypes.sort((typeA, typeB) => (typeA.name > typeB.name) ? 1 : -1);
     orderedTypes.forEach((type, i) => {
-      // typeName = 
       type.image = this.state.typeImages[i][type.name.toLowerCase()];
     })
     this.updateTypes(orderedTypes);
     console.log(orderedTypes)
-    // return orderedTypes;
   }
   
-  consoleCheck = () => {
-    this.state.yogaTypes.forEach(type => console.log('name: ', type.name, 'image: ', type.image[type.name.toLowerCase()]))
-  }
   
   updateTypes = (updatedTypes) => {
     this.setState({yogaTypes: updatedTypes})
-    console.log(this.consoleCheck())
   }
 
   storeRendered = (cardsDisplayed) => {
