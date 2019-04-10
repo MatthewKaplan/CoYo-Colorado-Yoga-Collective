@@ -16,24 +16,25 @@ class Controls extends Component {
 
   priceFilter = () => {
     let ordered;
-
     if(this.props.rendered.length >= 1) {
       ordered = this.props.rendered.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
     } else {
       ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
     }
-    // let ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
-    let lastElement = ordered.pop();
-    ordered.unshift(lastElement);
+
+    ordered.forEach(el => {
+      if(el.dropInFee.endsWith('Suggested donation')) {
+        console.log(ordered)
+        let lastElement = ordered.pop();
+        ordered.unshift(lastElement);
+      }
+    })
     return ordered;
   }
 
   sortByPrice = (e) => {
     e.preventDefault()
     let filteredPrice = this.priceFilter();
-
-    console.log(filteredPrice);
-    
     this.props.storeRendered(filteredPrice);
   }
 
