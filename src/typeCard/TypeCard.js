@@ -37,16 +37,18 @@ export class TypeCard extends Component {
 
   render() {
   return (
-    (<section className="yogaTypeCard">
-      <h4 className='typeHeading'>{this.props.name}</h4>
-      <h5 className='purpose'>Purpose:</h5>
-      <h5 className='purpose'>{this.props.purpose}</h5>
-      <p className='beginner'>Difficulty:</p>
-      <p className='beginner'>{this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
-      <p className='poses'>Poses: </p>
+    (<article className="yogaTypeCard scaleUpCenter">
+      <h4 className='typeHeading heading'>{this.props.name}</h4>
+      <h5 className='purposeHeading heading'>Purpose</h5>
+      <p className='purpose'>{this.props.purpose}</p>
+      {/* <h5 className='beginnerHeading heading'>Difficulty</h5> */}
+      <p className='beginner'>Level of Difficulty: {this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
+      <h5 className='posesHeading heading'>Common Poses </h5>
       <p className='poses'>{this.props.commonPoses}</p>
-      <input onClick={this.handleChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
-    </section>)
+      <div>
+        <input onClick={this.handleChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
+      </div>
+    </article>)
     )
   }
 }

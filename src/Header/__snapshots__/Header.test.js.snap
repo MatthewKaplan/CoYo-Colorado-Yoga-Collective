@@ -27,12 +27,12 @@ ShallowWrapper {
             className="coyoHeading"
           >
             <div
-              className="headingText co"
+              className="headingText coHeadingText"
             >
               CO
             </div>
             <div
-              className="headingText yo"
+              className="headingText yoHeadingText"
             >
               YO
             </div>
@@ -70,12 +70,12 @@ ShallowWrapper {
               className="coyoHeading"
             >
               <div
-                className="headingText co"
+                className="headingText coHeadingText"
               >
                 CO
               </div>
               <div
-                className="headingText yo"
+                className="headingText yoHeadingText"
               >
                 YO
               </div>
@@ -97,12 +97,12 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <div
-                  className="headingText co"
+                  className="headingText coHeadingText"
                 >
                   CO
                 </div>,
                 <div
-                  className="headingText yo"
+                  className="headingText yoHeadingText"
                 >
                   YO
                 </div>,
@@ -117,7 +117,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "CO",
-                  "className": "headingText co",
+                  "className": "headingText coHeadingText",
                 },
                 "ref": null,
                 "rendered": "CO",
@@ -129,7 +129,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "YO",
-                  "className": "headingText yo",
+                  "className": "headingText yoHeadingText",
                 },
                 "ref": null,
                 "rendered": "YO",
@@ -182,12 +182,12 @@ ShallowWrapper {
               className="coyoHeading"
             >
               <div
-                className="headingText co"
+                className="headingText coHeadingText"
               >
                 CO
               </div>
               <div
-                className="headingText yo"
+                className="headingText yoHeadingText"
               >
                 YO
               </div>
@@ -225,12 +225,12 @@ ShallowWrapper {
                 className="coyoHeading"
               >
                 <div
-                  className="headingText co"
+                  className="headingText coHeadingText"
                 >
                   CO
                 </div>
                 <div
-                  className="headingText yo"
+                  className="headingText yoHeadingText"
                 >
                   YO
                 </div>
@@ -252,12 +252,12 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <div
-                    className="headingText co"
+                    className="headingText coHeadingText"
                   >
                     CO
                   </div>,
                   <div
-                    className="headingText yo"
+                    className="headingText yoHeadingText"
                   >
                     YO
                   </div>,
@@ -272,7 +272,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "CO",
-                    "className": "headingText co",
+                    "className": "headingText coHeadingText",
                   },
                   "ref": null,
                   "rendered": "CO",
@@ -284,7 +284,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "YO",
-                    "className": "headingText yo",
+                    "className": "headingText yoHeadingText",
                   },
                   "ref": null,
                   "rendered": "YO",

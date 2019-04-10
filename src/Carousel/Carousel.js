@@ -16,15 +16,41 @@ export default class Carousel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      featuredCard: '',
+      typeImages: [{ anusara }, { ashtanga }, { bikram }, { jivamukti }, { iyengar }, { hatha }, { restorative }, { vinyasa }, { kundalini }, { yin }],
+      typesWithImages: []
     }
   }
 
+  
+  // updateTypes = (updatedTypes) => {
+  //   this.setState({typesWithImages: updatedTypes})
+  //   console.log(this.state.typesWithImages)
+  // }
+
+  reorderArray = () => {
+    const orderedTypes = this.props.yogaTypes.sort((typeA, typeB) => (typeA.name > typeB.name) ? 1 : -1);
+    orderedTypes.forEach((type, i)  => {
+      type.image = this.state.typeImages[i];
+    })
+    // this.updateTypes(orderedTypes);
+    return orderedTypes;
+  }
+
   render() {
+    this.reorderArray();
     return (
       <section className='typeContainer'>
         <article className="imageContainer">
-          <img src={anusara} alt="anusara" className="anusara typeSmall" />
+          {/* this.state.typeImages.forEach(typeImg => {
+            console.log(this.props.yogaTypes.name)
+            // this.props.yogaTypes.forEach(yogaType => {
+              
+              // })
+            }) */}
+          <img src={anusara} alt="anusara" className="anusara typeSmall" 
+          // onClick={this.addImgs}
+          />
           <img src={ashtanga} alt="ashtanga" className="ashtanga typeSmall" />
           <img src={bikram} alt="bikram" className="bikram typeSmall" />
           <img src={jivamukti} alt="jivamukti" className="jivamukti typeSmall" />
@@ -35,20 +61,23 @@ export default class Carousel extends Component {
           <img src={kundalini} alt="kundalini" className="kundalini typeSmall" />
           <img src={yin} alt="yin" className="yin typeSmall" />
         </article>
+        <article className="imageContainer2">
         {
           this.props.yogaTypes.map(yogaType =>
             <TypeCard
-              name={yogaType.name}
-              id={yogaType.typeId}
-              purpose={yogaType.purpose}
-              beginnerFriendly={yogaType.beginnerFriendly}
-              propsUsed={yogaType.propsUsed}
-              commonPoses={yogaType.commonPoses.map(poses => <p> {poses} </p>)}
-              studios={this.props.studios}
-              storeRendered={this.props.storeRendered}
+            name={yogaType.name}
+            id={yogaType.typeId}
+            purpose={yogaType.purpose}
+            beginnerFriendly={yogaType.beginnerFriendly}
+            propsUsed={yogaType.propsUsed}
+            commonPoses={yogaType.commonPoses.map(pose => `${pose}, ` )}
+            studios={this.props.studios}
+            checkImgs={this.addImgs}
+            storeRendered={this.props.storeRendered}
             />
-          )
-        }
+            )
+          }
+          </article>
       </section>
     );
   }

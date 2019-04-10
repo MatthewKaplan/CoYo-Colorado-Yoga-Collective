@@ -9,8 +9,8 @@ export default function Header(props) {
       <Nav />
       <section className="banner">
         <h1 className="coyoHeading">
-          <div className="headingText co">CO</div>
-          <div className="headingText yo">YO</div>
+          <div className="headingText coHeadingText">CO</div>
+          <div className="headingText yoHeadingText">YO</div>
         </h1>
         <h2 className="fullNameHeading">colorado yoga collective</h2>
       </section>
