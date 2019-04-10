@@ -6,6 +6,7 @@ import Studios from '../Studios/Studios.js';
 import Search from '../Search/Search.js';
 import Controls from '../Controls/Controls.js';
 
+
 import '../Styles/Main.scss';
 
 export default class App extends Component {
@@ -14,7 +15,8 @@ export default class App extends Component {
     this.state = {
       studios: [],
       yogaTypes: [],
-      rendered: []
+      rendered: [],
+      // typeImages: [{ anusara }, { ashtanga }, { bikram }, { hatha }, { iyengar }, { jivamukti }, { kundalini },  { restorative }, { vinyasa },  { yin }]
     };
   }
 
@@ -33,8 +35,10 @@ export default class App extends Component {
   componentDidMount(){
     if(!localStorage.getItem('studiosRendered')){
       this.fetchData();
+      this.addImgs();
     } else {
       console.log('Using Data From Local Storage')
+      // this.addImgs();
     }
   }
 
@@ -55,9 +59,30 @@ export default class App extends Component {
     localStorage.setItem('studios', JSON.stringify(nextState.studios));
   }
 
+  // addImgs = () => {
+  //   const orderedTypes = this.state.yogaTypes.sort((typeA, typeB) => (typeA.name > typeB.name) ? 1 : -1);
+  //   orderedTypes.forEach((type, i) => {
+  //     // typeName = 
+  //     type.image = this.state.typeImages[i][type.name.toLowerCase()];
+  //   })
+  //   this.updateTypes(orderedTypes);
+  //   console.log(orderedTypes)
+  //   // return orderedTypes;
+  // }
+  
+  consoleCheck = () => {
+    this.state.yogaTypes.forEach(type => console.log('name: ', type.name, 'image: ', type.image[type.name.toLowerCase()]))
+  }
+  
+  // updateTypes = (updatedTypes) => {
+  //   this.setState({yogaTypes: updatedTypes})
+  //   console.log(this.consoleCheck())
+  // }
+
   storeRendered = (cardsDisplayed) => {
     this.setState({rendered: cardsDisplayed})
   }
+
 
   render() {
     console.log(this.state)
