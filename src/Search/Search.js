@@ -38,7 +38,8 @@ class Search extends Component {
             placeholder="Search By Studio Name"
             value={this.state.searchQuery}
             onChange={this.handleInput}
-            className="studioSearch" 
+            className="studioSearch"
+            data-test="search-input"
           />
         </form>
       </section>

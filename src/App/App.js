@@ -10,8 +10,8 @@ import DisplayMessage from '../DisplayMessage/DisplayMessage.js';
 import '../Styles/Main.scss';
 
 export default class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       studios: [],
       yogaTypes: [],
@@ -70,9 +70,9 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state)
+    // console.log(this.state)
     return (
-      <section className="App">
+      <section className="App" data-test="component-app">
         <Header />
         <Carousel 
         studios={this.state.studios}
