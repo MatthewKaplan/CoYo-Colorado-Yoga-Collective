@@ -28,9 +28,8 @@ export class TypeCard extends Component {
   handleClickChange = (e) => {
     e.preventDefault()
     let userInput = parseInt(e.target.id);
-
     if(userInput === 9 || userInput === 10) {
-      alert("Sorry there are no studios currently teching this type of yoga at the time, please check back or pick another type")
+      alert("Sorry but this style of yoga is currently not being offered at any studios, please check back or choose another style.")
     } else {
       let result = this.filterStudioId(userInput);
       this.props.storeRendered(result)
@@ -46,7 +45,7 @@ export class TypeCard extends Component {
       <p className='beginner'>Difficulty:</p>
       <p className='beginner'>{this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
       <p className='poses'>Poses: </p>
-      <p className='poses'>{this.props.commonPoses}</p>
+      <div className='poses'>{this.props.commonPoses}</div>
       <input onClick={this.handleChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
     </section>)
     )
