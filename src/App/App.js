@@ -5,6 +5,7 @@ import Carousel from '../Carousel/Carousel.js';
 import Studios from '../Studios/Studios.js';
 import Search from '../Search/Search.js';
 import Controls from '../Controls/Controls.js';
+import DisplayMessage from '../DisplayMessage/DisplayMessage.js';
 
 import '../Styles/Main.scss';
 
@@ -14,7 +15,8 @@ export default class App extends Component {
     this.state = {
       studios: [],
       yogaTypes: [],
-      rendered: []
+      rendered: [],
+      emptyType: ''
     };
   }
 
@@ -27,6 +29,9 @@ export default class App extends Component {
     })
     localStorage.getItem('studios') && this.setState({
       studios: JSON.parse(localStorage.getItem('studios'))
+    })
+    localStorage.getItem('emptyType') && this.setState({
+      emptyType: JSON.parse(localStorage.getItem('emptyType'))
     })
   }
 
@@ -53,6 +58,11 @@ export default class App extends Component {
     localStorage.setItem('studiosRendered', JSON.stringify(nextState.rendered));
     localStorage.setItem('types', JSON.stringify(nextState.yogaTypes));
     localStorage.setItem('studios', JSON.stringify(nextState.studios));
+    localStorage.setItem('emptyType', JSON.stringify(nextState.emptyType));
+  }
+
+  storeEmptyType = (message) => {
+    this.setState({emptyType: message})
   }
 
   storeRendered = (cardsDisplayed) => {
@@ -68,6 +78,7 @@ export default class App extends Component {
         studios={this.state.studios}
         yogaTypes={this.state.yogaTypes}
         storeRendered={this.storeRendered}
+        storeEmptyType={this.storeEmptyType}
         />
         <Search 
         studios={this.state.studios}
@@ -78,12 +89,19 @@ export default class App extends Component {
         storeRendered={this.storeRendered}
         rendered={this.state.rendered}
         />
-        <Studios 
-        studios={this.state.studios}
-        rendered={this.state.rendered}
-        />
+        {this.state.emptyType ?
+          <DisplayMessage 
+          emptyType={this.state.emptyType}
+          /> : null
+        }
+        {this.state.emptyType ? 
+          null :
+          <Studios 
+          studios={this.state.studios}
+          rendered={this.state.rendered}
+          />
+        }
       </section>
     );
-    
   }
 }
