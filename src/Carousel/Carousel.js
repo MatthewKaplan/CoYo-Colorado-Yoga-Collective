@@ -46,7 +46,9 @@ export default class Carousel extends Component {
               commonPoses={yogaType.commonPoses.map(poses => <div> {poses} </div>)}
               studios={this.props.studios}
               storeRendered={this.props.storeRendered}
+              typeId={this.props.typeId}
               storeEmptyType={this.props.storeEmptyType}
+              storeTypeId={this.props.storeTypeId}
             />
           )
         }

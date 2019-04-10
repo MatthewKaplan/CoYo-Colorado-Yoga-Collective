@@ -79,6 +79,8 @@ export default class App extends Component {
         yogaTypes={this.state.yogaTypes}
         storeRendered={this.storeRendered}
         storeEmptyType={this.storeEmptyType}
+        typeId={this.typeId}
+        storeTypeId={this.storeTypeId}
         />
         <Search 
         studios={this.state.studios}

@@ -9,13 +9,6 @@ export class TypeCard extends Component {
     }
   }
 
-  handleChange = (e) => {
-    this.setState({
-      typeId: e.target.id
-    })
-    this.handleClickChange(e);
-  }
-
   filterStudioId = (userInput) => {
     return this.props.studios.filter(studio => {
       let studioId = studio.mainTypeOffered;
@@ -39,7 +32,7 @@ export class TypeCard extends Component {
 
   render() {
   return (
-    (<section className="yogaTypeCard">
+    <section className="yogaTypeCard">
       <h4 className='typeHeading'>{this.props.name}</h4>
       <h5 className='purpose'>Purpose:</h5>
       <h5 className='purpose'>{this.props.purpose}</h5>
@@ -47,8 +40,8 @@ export class TypeCard extends Component {
       <p className='beginner'>{this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
       <p className='poses'>Poses: </p>
       <div className='poses'>{this.props.commonPoses}</div>
-      <input onClick={this.handleChange} className='findStudioBtn' data-test='find-studios-btn' type="submit" value="Find Studios" id={this.props.id} />
-    </section>)
+      <input onClick={this.handleClickChange} className='findStudioBtn' data-test='find-studios-btn' type="submit" value="Find Studios" id={this.props.id} />
+    </section>
     )
   }
 }
