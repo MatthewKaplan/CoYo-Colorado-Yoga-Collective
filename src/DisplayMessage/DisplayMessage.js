@@ -10,10 +10,8 @@ class DisplayMessage extends Component {
 
   render() {
     return(
-      <article>
-        <div className="displayMessageContainer">
+      <article className="displayMessageContainer">
           <p className="emptyTypeText">{this.props.emptyType}</p>
-        </div>
       </article>
     )
   }
