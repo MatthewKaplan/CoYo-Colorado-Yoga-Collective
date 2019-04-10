@@ -76,6 +76,7 @@ export default class App extends Component {
         <Controls 
         studios={this.state.studios}
         storeRendered={this.storeRendered}
+        rendered={this.state.rendered}
         />
         <Studios 
         studios={this.state.studios}
