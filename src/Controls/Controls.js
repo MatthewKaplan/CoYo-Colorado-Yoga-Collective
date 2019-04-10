@@ -24,11 +24,10 @@ class Controls extends Component {
 
     ordered.forEach(el => {
       if(el.dropInFee.endsWith('Suggested donation')) {
-        console.log(ordered)
         let lastElement = ordered.pop();
         ordered.unshift(lastElement);
       }
-    })
+    });
     return ordered;
   }
 
@@ -37,7 +36,6 @@ class Controls extends Component {
     let filteredPrice = this.priceFilter();
     this.props.storeRendered(filteredPrice);
   }
-
 
   render() {
     return  (

@@ -19,20 +19,22 @@ export class TypeCard extends Component {
   }
 
   filterStudioId = (userInput) => {
-    return this.props.studios.filter((studio) => {
+    return this.props.studios.filter(studio => {
       let studioId = studio.mainTypeOffered;
-      if(studioId === userInput) {
-        return studioId === userInput;
-      }
+      return studioId === userInput;
     });
   }
 
   handleClickChange = (e) => {
     e.preventDefault()
     let userInput = parseInt(e.target.id);
-    let result = this.filterStudioId(userInput);
-    
-    this.props.storeRendered(result)
+
+    if(userInput === 9 || userInput === 10) {
+      alert("Sorry there are no studios currently teching this type of yoga at the time, please check back or pick another type")
+    } else {
+      let result = this.filterStudioId(userInput);
+      this.props.storeRendered(result)
+    }
   }
 
   render() {
