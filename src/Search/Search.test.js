@@ -38,16 +38,20 @@ describe('Search', () => {
   it('should render an input', () => {
     const searchInput = wrapper.find("[data-test='search-input']");
     expect(searchInput.length).toBe(1);
-  })
+  });
 
   it('should take text from input box to filter studios when handleInputChange is invoked', () => {
-    const searchInput = wrapper.find("[data-test='search-input']");
-    searchInput.simulate('keypress', {key: 'Enter'}, {target: {value: "Whole Yoga"}});
-  })
+    wrapper.find('.studioSearch').simulate('keypress', {key: 'Enter'}, {target: { value: "Whole Yoga"}});
+  });
+  
+  it('should setState after handleInput is invoked', () => {
+  wrapper.find('.studioSearch').simulate('change', {target: {value: 'Whole Yoga'}});
+  });
 
-  //test handleInput
   //test findMatchingStudio
-  //Fix handleInputChange test above - not working
+it('should find a matching studio', () => {
+  
+})
   //test render
 
 });
