@@ -13,7 +13,12 @@ export default class Carousel extends Component {
 
   render() {
     return (
-      <section className='typeContainer'>
+      <main className='carouselContainer'>
+        <section className='carouselText'>
+          <h3 className="carouselHeading">Scroll to explore yoga types >>> </h3>
+          <p className="carouselMessage">Click a type to learn more and find a local studio offering that style</p>
+        </section>
+        <section className='typeContainer'>
         {
         this.props.yogaTypes.map(yogaType =>
           <TypeCard
@@ -31,7 +36,8 @@ export default class Carousel extends Component {
           />
           )
         }
-    </section>
+      </section>
+    </main>
     );
   }
 }
