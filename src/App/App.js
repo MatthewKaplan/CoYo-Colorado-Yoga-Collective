@@ -61,7 +61,9 @@ export default class App extends Component {
       .catch(err => console.log(err))
     fetch('https://fe-apps.herokuapp.com/api/v1/whateverly/1901/SallyHaefling/yoga')
       .then(response => response.json())
-      .then(yogaTypes => this.setState( {yogaTypes: yogaTypes.yoga.types}))
+      .then(yogaTypes => this.setState( {yogaTypes: yogaTypes.yoga.types}, () => {
+        this.addImgs();
+      }))
       .catch(err => console.log(err))
   }
 
