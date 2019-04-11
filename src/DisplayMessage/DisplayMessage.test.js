@@ -1,22 +1,20 @@
 import React from 'react';
-import Studios from './Studios';
+import DisplayMessage from './DisplayMessage';
 import { shallow } from 'enzyme';
 
-
-describe('Studios', () => {
+describe('DisplayMessage', () => {
   let wrapper;
   
   beforeEach(() => {
     wrapper = shallow(
-      <Studios />
+      <DisplayMessage />
     )
   });
 
   it('should match snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot();
   });
 
-  //test render 
-  //test renderDisplay
+//test map functionality
 
 });

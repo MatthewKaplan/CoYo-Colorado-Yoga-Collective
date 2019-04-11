@@ -15,18 +15,26 @@ class Controls extends Component {
   }
 
   priceFilter = () => {
-    let ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
-    let lastElement = ordered.pop();
-    return ordered.unshift(lastElement);
+    let ordered;
+    if(this.props.rendered.length >= 1) {
+      ordered = this.props.rendered.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
+    } else {
+      ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
+    }
+    ordered.forEach(el => {
+      if(el.dropInFee.endsWith('Suggested donation')) {
+        let lastElement = ordered.pop();
+        ordered.unshift(lastElement);
+      }
+    });
+    return ordered;
   }
 
   sortByPrice = (e) => {
     e.preventDefault()
     let filteredPrice = this.priceFilter();
-    
     this.props.storeRendered(filteredPrice);
   }
-
 
   render() {
     return  (
@@ -36,12 +44,14 @@ class Controls extends Component {
           type='submit'
           className='showAll'
           onClick={this.displayAllStudios}
+          data-test="show-all-button"
           />
           <input
           value='Sort by price' 
           type='submit'
           className='sort'
           onClick={this.sortByPrice}
+          data-test="sort-price-button"
           />
       </section>
     )

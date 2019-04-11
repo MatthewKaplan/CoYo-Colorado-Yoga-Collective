@@ -35,10 +35,9 @@ export default class StudioCard extends Component {
           </div>
           <div className="inline">
             <div className="starsOuter">
-              <div className="starsInner" style={starsInnerStyle}>
-            </div>
-            <p className="studioRating">{this.props.rating}</p>
+              <div className="starsInner" style={starsInnerStyle}></div>
           </div>
+            <p className="studioRating">{this.props.rating}</p>
           </div>
           <a href={this.props.link} className="studioLink" rel="noopener noreferrer" target="_blank">Learn More</a>
         </main>

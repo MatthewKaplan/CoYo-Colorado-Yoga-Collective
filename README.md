@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CoYo: Colorado Yoga Collective
 
-## Available Scripts
+## Abstract:
 
-In the project directory, you can run:
+As a group project, we wanted to create an app for users to find their favorite yoga studios (based off of yoga type; ie: hatha, vinyasa) and all of the drop-in fees so that they had everything in one place. We created functionality for displaying studios based off of yoga type, sorting studios by price, display all studios, and a search bar to search for a specific yoga studio upon hitting the return key. 
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+First, clone down the repo.
 
-### `npm test`
+```bash
+git clone 
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once you have cloned the repo, install the library dependencies. Run:
 
-### `npm run build`
+```bash
+npm install
+```
+To run tests in the game program, Run:
+```bash
+npm test
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wireframes and photos of project:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![Image from iOS (1)](https://user-images.githubusercontent.com/40863560/55840512-dab94c00-5ae8-11e9-8668-dead5f46e172.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Image from iOS](https://user-images.githubusercontent.com/40863560/55840516-dd1ba600-5ae8-11e9-8d20-af467fc340d0.jpg)
 
-### `npm run eject`
+!! FINAL PHOTOS OF PROJECT HERE !!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technologies used:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* fetch API 
+* ReactJS 
+* JSX 
+* SCSS
+* Enzyme/Jest
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Authors:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Matthew Kaplan
 
-## Learn More
+[Sally Haefling](https://github.com/SallyHaefling)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Kelly Zick](https://github.com/misskelly)

@@ -27,7 +27,10 @@ export default class Carousel extends Component {
             studios={this.props.studios}
             types={this.props.yogaTypes}
             checkImgs={this.addImgs}
+            typeId={this.props.typeId}
             storeRendered={this.props.storeRendered}
+            storeTypeId={this.props.storeTypeId}
+            storeEmptyType={this.props.storeEmptyType}
           />
           )
         }
