@@ -15,7 +15,7 @@ import kundalini from '../Styles/images/KUNDALINI.png'
 import vinyasa from '../Styles/images/VINYASA.png'
 import yin from '../Styles/images/YIN.png'
 import restorative from '../Styles/images/RESTORATIVE.png'
-import DisplayMessage from '../DisplayMessage/DisplayMessage.js';
+import {DisplayMessage} from '../DisplayMessage/DisplayMessage.js';
 
 
 import '../Styles/Main.scss';
