@@ -5,7 +5,7 @@ class Controls extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      //TODO:this should be a stateless componenet
     }
   }
 
