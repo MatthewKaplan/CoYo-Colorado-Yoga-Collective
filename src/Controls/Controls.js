@@ -21,7 +21,6 @@ class Controls extends Component {
     } else {
       ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
     }
-
     ordered.forEach(el => {
       if(el.dropInFee.endsWith('Suggested donation')) {
         let lastElement = ordered.pop();
