@@ -11,7 +11,9 @@ class Controls extends Component {
 
   displayAllStudios = (e) => {
     e.preventDefault()
-    this.props.storeRendered(this.props.studios)
+    let message = "";
+    this.props.storeEmptyType(message);
+    this.props.storeRendered(this.props.studios);
   }
 
   priceFilter = () => {

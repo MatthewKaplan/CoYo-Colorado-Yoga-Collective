@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../Styles/_Header.scss';
 import Nav from './Nav'
-
 
 export default function Header(props) {
   return (
@@ -15,8 +14,6 @@ export default function Header(props) {
         <h2 className="fullNameHeading">colorado yoga collective</h2>
       </section>
       <section className="temp">
-        
-
       </section>
     </header>
   )

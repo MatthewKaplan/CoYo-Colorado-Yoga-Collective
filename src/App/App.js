@@ -42,9 +42,6 @@ export default class App extends Component {
     localStorage.getItem('studios') && this.setState({
       studios: JSON.parse(localStorage.getItem('studios'))
     })
-    localStorage.getItem('emptyType') && this.setState({
-      emptyType: JSON.parse(localStorage.getItem('emptyType'))
-    })
   }
 
   componentDidMount(){
@@ -63,7 +60,9 @@ export default class App extends Component {
       .catch(err => console.log(err))
     fetch('https://fe-apps.herokuapp.com/api/v1/whateverly/1901/SallyHaefling/yoga')
       .then(response => response.json())
-      .then(yogaTypes => this.setState( {yogaTypes: yogaTypes.yoga.types}))
+      .then(yogaTypes => this.setState( {yogaTypes: yogaTypes.yoga.types}, () => {
+        this.addImgs();
+      }))
       .catch(err => console.log(err))
   }
 
@@ -71,7 +70,6 @@ export default class App extends Component {
     localStorage.setItem('studiosRendered', JSON.stringify(nextState.rendered));
     localStorage.setItem('types', JSON.stringify(nextState.yogaTypes));
     localStorage.setItem('studios', JSON.stringify(nextState.studios));
-    localStorage.setItem('emptyType', JSON.stringify(nextState.emptyType));
   }
 
   storeEmptyType = (message) => {
@@ -91,6 +89,7 @@ export default class App extends Component {
   }
 
   storeRendered = (cardsDisplayed) => {
+    console.log(cardsDisplayed)
     this.setState({rendered: cardsDisplayed})
   }
 
@@ -112,6 +111,7 @@ export default class App extends Component {
         storeRendered={this.storeRendered}
         />
         <Controls 
+        storeEmptyType={this.storeEmptyType}
         studios={this.state.studios}
         storeRendered={this.storeRendered}
         rendered={this.state.rendered}
