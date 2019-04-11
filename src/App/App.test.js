@@ -9,7 +9,6 @@ describe('App', () => {
       <App 
       />
     )
-    .find()
   });
 
   it('should render without errors', () => {
@@ -36,9 +35,5 @@ describe('App', () => {
     let result = wrapper.instance().storeEmptyType("");
   expect(result).toBe(undefined);
     });
-
-    it("should start out with typeImages", () => {
-      
-    })
 
 });
