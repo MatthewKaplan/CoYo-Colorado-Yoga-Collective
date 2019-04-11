@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match snapshot 1`] = `
+<section
+  className="App"
+  data-test="component-app"
+>
+  <Header />
+  <Carousel
+    storeEmptyType={[Function]}
+    storeRendered={[Function]}
+    studios={Array []}
+    yogaTypes={Array []}
+  />
+  <Search
+    storeRendered={[Function]}
+    studios={Array []}
+  />
+  <Controls
+    rendered={Array []}
+    storeRendered={[Function]}
+    studios={Array []}
+  />
+  <Studios
+    rendered={Array []}
+    studios={Array []}
+  />
+</section>
+`;
