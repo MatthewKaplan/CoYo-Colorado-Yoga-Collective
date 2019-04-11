@@ -95,7 +95,7 @@ export default class App extends Component {
 
 
   render() {
-    // console.log(this.state)
+    console.log(this.state)
     return (
       <section className="App" data-test="component-app">
         <Header />
@@ -112,6 +112,7 @@ export default class App extends Component {
         storeRendered={this.storeRendered}
         />
         <Controls 
+        storeEmptyType={this.storeEmptyType}
         studios={this.state.studios}
         storeRendered={this.storeRendered}
         rendered={this.state.rendered}
