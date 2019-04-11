@@ -88,7 +88,6 @@ export default class App extends Component {
     console.log(orderedTypes)
   }
   
-  
   updateTypes = (updatedTypes) => {
     this.setState({yogaTypes: updatedTypes})
   }

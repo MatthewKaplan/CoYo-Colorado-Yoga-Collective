@@ -42,7 +42,8 @@ export class TypeCard extends Component {
 
   hideInfo = (e) => {
     e.target.classList.add('hidden');
-    e.target.previousSiblingElement.classList.remove('hidden')
+    e.target.parentElement.firstChild.classList.remove('hidden');
+    
   }
 
 
