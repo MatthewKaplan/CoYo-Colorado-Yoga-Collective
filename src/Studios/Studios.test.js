@@ -19,7 +19,4 @@ describe('Studios', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  //test render 
-  //test renderDisplay
-
 });

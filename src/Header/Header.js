@@ -5,8 +5,8 @@ import {Nav} from './Nav'
 export const Header = (props) => {
   return (
     <header className="pageHeader">
-      <Nav />
       <section className="banner">
+      <Nav />
         <h1 className="coyoHeading">
           <div className="headingText coHeadingText">CO</div>
           <div className="headingText yoHeadingText">YO</div>

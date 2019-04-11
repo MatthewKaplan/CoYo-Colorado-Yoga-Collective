@@ -3,7 +3,7 @@ import '../Styles/_Nav.scss';
 import logo from './logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const Nav = (props) => {
+export const Nav = () => {
   return (
     <nav className="navBar">
       <div className="logo">

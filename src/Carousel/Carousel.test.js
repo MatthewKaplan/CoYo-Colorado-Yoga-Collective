@@ -37,8 +37,6 @@ describe('Carousel', () => {
   const storeEmptyType = jest.fn()
   const storeRendered = jest.fn()
 
-
-
   it('should match snapshot', () => {
     wrapper = shallow (<Carousel
           yogaTypes={mockYogaType}
