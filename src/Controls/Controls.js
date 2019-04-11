@@ -4,9 +4,6 @@ import '../Styles/_Controls.scss';
 class Controls extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      //TODO:this should be a stateless componenet
-    }
   }
 
   displayAllStudios = (e) => {

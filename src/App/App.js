@@ -87,7 +87,6 @@ export default class App extends Component {
   }
 
   storeRendered = (cardsDisplayed) => {
-    console.log(cardsDisplayed)
     this.setState({rendered: cardsDisplayed})
   }
 

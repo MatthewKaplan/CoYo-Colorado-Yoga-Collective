@@ -4,10 +4,10 @@ exports[`Header should match snapshot 1`] = `
 <header
   className="pageHeader"
 >
-  <Nav />
   <section
     className="banner"
   >
+    <Nav />
     <h1
       className="coyoHeading"
     >

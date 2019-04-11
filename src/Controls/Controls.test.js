@@ -57,10 +57,4 @@ it('should invoke displayAllStudios when show-all-btn is clicked', () => {
   expect()
 });
 
-//test methods on click events
-
-//test render()
-
-//test if after sortByPrice that the state of rendered is populated (state lives in App.js)
-
 });
