@@ -50,6 +50,7 @@
   padding: 20px;
   background: $type-background;
   text-align: center;
+  // color: hsl(0, 4%, 18%);
 }
 
 .hidden {
@@ -57,23 +58,31 @@
 }
 
 .typeHeading {
+  font-family: $full-name-heading;
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: 3px;
 }
 
+.heading {
+  font-family: $full-name-heading;
+}
 .purpose {
   font-size: 16px;
   font-style: italic;
 }
 
 .beginner {
-  margin-bottom: 0px;
+  font-family: $full-name-heading;
+  // margin-bottom: 0px;
 }
 
 .findStudioBtn {
+  text-transform: uppercase;
+  font-size: 14px;
   border-radius: 4px;
-  background-color: $find-studio-btn;
+  background-color: hsl(196, 63%, 33%);
   color: $find-studio-btn-text;
   width: 40%;
 }
