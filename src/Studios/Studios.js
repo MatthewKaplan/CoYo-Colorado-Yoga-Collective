@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import StudioCard from '../StudioCard/StudioCard.js';
+import {StudioCard} from '../StudioCard/StudioCard.js';
 import '../Styles/_studioCard.scss';
 
 export default class Studios extends Component {
