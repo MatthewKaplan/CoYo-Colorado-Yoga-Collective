@@ -6,6 +6,7 @@ export default class Studios extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      //TODO:this should be a stateless container
     }
   }
 
