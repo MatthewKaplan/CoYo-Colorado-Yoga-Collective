@@ -24,8 +24,7 @@ export const Carousel = (props) => {
           types={props.yogaTypes}
           storeRendered={props.storeRendered}
           storeEmptyType={props.storeEmptyType}
-        />
-        )
+        />)
       }
     </section>
   </main>

@@ -1,5 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`StudioCard should match snapshot 1`] = `
+<article
+  className="studioCard"
+>
+  <header
+    className="cardCover"
+  >
+    <img
+      alt="Group Yoga in studio"
+      className="studioImg"
+    />
+    <h4
+      className="studioName"
+    />
+    <div
+      className="studioFee"
+    >
+      <div
+        className="dropInText"
+      >
+        drop in
+      </div>
+    </div>
+  </header>
+  <main
+    className="studioInfo"
+  >
+    <address
+      className="contactInfo"
+    >
+      <p
+        className="address"
+      />
+      <a
+        className="phoneNum"
+        href="tel:3034162958"
+      />
+    </address>
+    <div
+      className="missionContainer"
+    >
+      <h4
+        className="missionHeading"
+      >
+        Mission:
+      </h4>
+      <p
+        className="studioMission"
+      />
+    </div>
+    <div
+      className="inline"
+    >
+      <div
+        className="starsOuter"
+      >
+        <div
+          className="starsInner"
+          style={
+            Object {
+              "width": undefined,
+            }
+          }
+        />
+      </div>
+      <p
+        className="studioRating"
+      />
+    </div>
+    <a
+      className="studioLink"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Learn More
+    </a>
+  </main>
+</article>
+`;
+
 exports[`StudioCard should render correctly with all the information passed 1`] = `
 <article
   className="studioCard"

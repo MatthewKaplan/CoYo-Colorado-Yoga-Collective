@@ -1,8 +1,8 @@
 import React from 'react';
 import '../Styles/_Header.scss';
-import Nav from './Nav'
+import {Nav} from './Nav'
 
-export default function Header(props) {
+export const Header = (props) => {
   return (
     <header className="pageHeader">
       <Nav />
