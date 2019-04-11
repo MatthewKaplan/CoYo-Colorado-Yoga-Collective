@@ -32,18 +32,6 @@ export default class App extends Component {
     };
   }
 
-  componentWillMount() {
-    localStorage.getItem('studiosRendered') && this.setState({
-      rendered: JSON.parse(localStorage.getItem('studiosRendered'))
-    })
-    localStorage.getItem('types') && this.setState({
-      yogaTypes: JSON.parse(localStorage.getItem('types'))
-    })
-    localStorage.getItem('studios') && this.setState({
-      studios: JSON.parse(localStorage.getItem('studios'))
-    })
-  }
-
   componentDidMount(){
     if(!localStorage.getItem('studiosRendered')){
       this.fetchData();
@@ -72,8 +60,16 @@ export default class App extends Component {
     localStorage.setItem('studios', JSON.stringify(nextState.studios));
   }
 
-  storeEmptyType = (message) => {
-    this.setState({emptyType: message})
+  componentWillMount() {
+    localStorage.getItem('studiosRendered') && this.setState({
+      rendered: JSON.parse(localStorage.getItem('studiosRendered'))
+    })
+    localStorage.getItem('types') && this.setState({
+      yogaTypes: JSON.parse(localStorage.getItem('types'))
+    })
+    localStorage.getItem('studios') && this.setState({
+      studios: JSON.parse(localStorage.getItem('studios'))
+    })
   }
 
   addImgs = () => {
@@ -82,6 +78,10 @@ export default class App extends Component {
       type.image = this.state.typeImages[i][type.name.toLowerCase()];
     })
     this.updateTypes(orderedTypes);
+  }
+
+  storeEmptyType = (message) => {
+    this.setState({emptyType: message})
   }
   
   updateTypes = (updatedTypes) => {
