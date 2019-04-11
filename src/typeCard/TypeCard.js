@@ -9,8 +9,6 @@ export class TypeCard extends Component {
     }
   }
   
-
-
   filterStudioId = (userInput) => {
     return this.props.studios.filter(studio => {
       let studioId = studio.mainTypeOffered;
@@ -41,16 +39,15 @@ export class TypeCard extends Component {
   }
 
   hideInfo = (e) => {
-    e.target.classList.add('hidden');
-    e.target.parentElement.firstChild.classList.remove('hidden');
-    
+    if (e.target.className === 'yogaTypeCard') {
+      e.currentTarget.classList.add('hidden');
+      e.target.parentElement.firstChild.classList.remove('hidden');
+    }
   }
 
-
   render() {
- 
   return (
-    (<section className="imageContainer">
+    <section className="imageContainer">
       <article className="typeCoverImage typeSmall">
         {this.props.types[0] && <img src={this.props.image} alt={this.props.name} className="typeSmallImg" id={this.props.name} onClick={this.handleTypeClick}/>}
       </article>
@@ -65,7 +62,7 @@ export class TypeCard extends Component {
           <input onClick={this.handleClickChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
         </div>
       </article>
-    </section>)
+    </section>
     )
   }
 }

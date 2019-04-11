@@ -16,6 +16,10 @@ li {
   color: $nav-bar-color;
 }
 
+.icon:hover {
+  color: $studio-color;
+}
+
 .navList{
   display: flex;
   width: 10%;

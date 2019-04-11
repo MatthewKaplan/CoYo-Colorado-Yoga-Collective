@@ -13,6 +13,8 @@ export default class Studios extends Component {
   renderDisplay = () => {
     let display;
 
+    console.log(this.props.rendered)
+
     if(this.props.rendered.length >= 1) {
       display = 
       this.props.rendered.map( studio => 
