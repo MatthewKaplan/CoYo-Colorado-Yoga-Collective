@@ -8,6 +8,8 @@ export class TypeCard extends Component {
       typeId: 0
     }
   }
+  
+
 
   filterStudioId = (userInput) => {
     return this.props.studios.filter(studio => {
@@ -19,6 +21,8 @@ export class TypeCard extends Component {
   handleClickChange = (e) => {
     e.preventDefault()
     let userInput = parseInt(e.target.id);
+    let result = this.filterStudioId(userInput);
+    this.props.storeRendered(result)
     if(userInput === 9 || userInput === 10) {
       let message = "Sorry but the style of yoga you choose is not currently being offered at any studios, please check back or choose another style.";
       this.props.storeEmptyType(message)
@@ -30,18 +34,37 @@ export class TypeCard extends Component {
     }
   }
 
+  handleTypeClick = (e) => {
+    const infoCard = e.target.parentElement.nextSibling;
+    e.target.parentElement.classList.add('hidden');
+    infoCard.classList.remove('hidden');
+  }
+
+  hideInfo = (e) => {
+    e.target.classList.add('hidden');
+    e.target.previousSibling.classList.remove('hidden')
+  }
+
+
   render() {
+ 
   return (
-    <section className="yogaTypeCard">
-      <h4 className='typeHeading'>{this.props.name}</h4>
-      <h5 className='purpose'>Purpose:</h5>
-      <h5 className='purpose'>{this.props.purpose}</h5>
-      <p className='beginner'>Difficulty:</p>
-      <p className='beginner'>{this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
-      <p className='poses'>Poses: </p>
-      <div className='poses'>{this.props.commonPoses}</div>
-      <input onClick={this.handleClickChange} className='findStudioBtn' data-test='find-studios-btn' type="submit" value="Find Studios" id={this.props.id} />
-    </section>
+    (<section className="imageContainer">
+      <article className="typeCoverImage typeSmall">
+        {this.props.types[0] && <img src={this.props.image} alt={this.props.name} className="typeSmallImg" id={this.props.name} onClick={this.handleTypeClick}/>}
+      </article>
+      <article className="yogaTypeCard scaleUpCenter hidden" onMouseLeave={this.hideInfo}>
+        <h4 className='typeHeading heading'>{this.props.name}</h4>
+        <h5 className='purposeHeading heading'>Purpose</h5>
+        <p className='purpose'>{this.props.purpose}</p>
+        <p className='beginner'>Level of Difficulty: {this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
+        <h5 className='posesHeading heading'>Common Poses </h5>
+        <p className='poses'>{this.props.commonPoses}</p>
+        <div>
+          <input onClick={this.handleChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
+        </div>
+      </article>
+    </section>)
     )
   }
 }

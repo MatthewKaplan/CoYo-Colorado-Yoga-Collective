@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Styles/Nav.scss';
+import '../Styles/_Nav.scss';
 import logo from './logo.png';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 export default function Nav(props) {
@@ -12,17 +12,17 @@ export default function Nav(props) {
       </div>
       <ul className="navList">
         <li className="facebook socialMedia">
-         <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com" title="link to facebook">
           <FontAwesomeIcon icon={['fab', 'facebook-square']} />
          </a>
         </li>
         <li className="twitter socialMedia">
-         <a href="www.twitter.com">
+          <a href="www.twitter.com" title="link to Twitter">
           <FontAwesomeIcon icon={['fab', 'twitter']} />
          </a>
         </li>
         <li className="instagram socialMedia">
-         <a href="www.instagram.com">
+         <a href="www.instagram.com" title="link to Instagram">
           <FontAwesomeIcon icon={['fab', 'instagram']} />
          </a>
         </li>

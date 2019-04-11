@@ -1,10 +1,10 @@
 @import 'Mixins';
 
 .typeContainer {
+    background-image: linear-gradient(-180deg, #353333
+ 9%,#1F6B87 100%);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(-180deg, hsl(0, 2%, 20%), 9%,hsl(196, 63%, 33%) 100%);
+  min-width: 100%;
+  min-height: 400px;
+  overflow-x: auto;
 }

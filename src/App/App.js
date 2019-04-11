@@ -5,7 +5,18 @@ import Carousel from '../Carousel/Carousel.js';
 import Studios from '../Studios/Studios.js';
 import Search from '../Search/Search.js';
 import Controls from '../Controls/Controls.js';
+import anusara from '../Styles/images/ANUSARA.png'
+import ashtanga from '../Styles/images/ASHTANGA.png'
+import bikram from '../Styles/images/BIKRAM.png'
+import hatha from '../Styles/images/HATHA.png'
+import iyengar from '../Styles/images/IYENGAR.png'
+import jivamukti from '../Styles/images/JIVAMUKTI.png'
+import kundalini from '../Styles/images/KUNDALINI.png'
+import vinyasa from '../Styles/images/VINYASA.png'
+import yin from '../Styles/images/YIN.png'
+import restorative from '../Styles/images/RESTORATIVE.png'
 import DisplayMessage from '../DisplayMessage/DisplayMessage.js';
+
 
 import '../Styles/Main.scss';
 
@@ -16,6 +27,7 @@ export default class App extends Component {
       studios: [],
       yogaTypes: [],
       rendered: [],
+      typeImages: [{ anusara }, { ashtanga }, { bikram }, { hatha }, { iyengar }, { jivamukti }, { kundalini },  { restorative }, { vinyasa },  { yin }],
       emptyType: ''
     };
   }
@@ -38,8 +50,10 @@ export default class App extends Component {
   componentDidMount(){
     if(!localStorage.getItem('studiosRendered')){
       this.fetchData();
+      this.addImgs();
     } else {
       console.log('Using Data From Local Storage')
+      this.addImgs();
     }
   }
 
@@ -65,9 +79,24 @@ export default class App extends Component {
     this.setState({emptyType: message})
   }
 
+  addImgs = () => {
+    const orderedTypes = this.state.yogaTypes.sort((typeA, typeB) => (typeA.name > typeB.name) ? 1 : -1);
+    orderedTypes.forEach((type, i) => {
+      type.image = this.state.typeImages[i][type.name.toLowerCase()];
+    })
+    this.updateTypes(orderedTypes);
+    console.log(orderedTypes)
+  }
+  
+  
+  updateTypes = (updatedTypes) => {
+    this.setState({yogaTypes: updatedTypes})
+  }
+
   storeRendered = (cardsDisplayed) => {
     this.setState({rendered: cardsDisplayed})
   }
+
 
   render() {
     // console.log(this.state)
