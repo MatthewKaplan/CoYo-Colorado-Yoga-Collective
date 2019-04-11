@@ -91,7 +91,6 @@ export default class App extends Component {
     this.setState({rendered: cardsDisplayed})
   }
 
-
   render() {
     return (
       <section className="App" data-test="component-app">

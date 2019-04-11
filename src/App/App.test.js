@@ -118,5 +118,5 @@ describe('App', () => {
     wrapper.instance().storeEmptyType(mockMessage);
     expect(typeof wrapper.state('emptyType')).toBe('string');
   });
-
+  
 });
