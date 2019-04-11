@@ -52,7 +52,6 @@ export default class App extends Component {
       this.fetchData();
       this.addImgs();
     } else {
-      console.log('Using Data From Local Storage')
       this.addImgs();
     }
   }
@@ -85,7 +84,6 @@ export default class App extends Component {
       type.image = this.state.typeImages[i][type.name.toLowerCase()];
     })
     this.updateTypes(orderedTypes);
-    console.log(orderedTypes)
   }
   
   
@@ -99,7 +97,6 @@ export default class App extends Component {
 
 
   render() {
-    // console.log(this.state)
     return (
       <section className="App" data-test="component-app">
         <Header />
