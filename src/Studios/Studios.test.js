@@ -2,13 +2,16 @@ import React from 'react';
 import Studios from './Studios';
 import { shallow } from 'enzyme';
 
+const mockRender = jest.fn()
 
 describe('Studios', () => {
   let wrapper;
   
   beforeEach(() => {
     wrapper = shallow(
-      <Studios />
+      <Studios 
+        renderDisplay={mockRender}
+      />
     )
   });
 
