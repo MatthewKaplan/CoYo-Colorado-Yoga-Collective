@@ -42,9 +42,6 @@ export default class App extends Component {
     localStorage.getItem('studios') && this.setState({
       studios: JSON.parse(localStorage.getItem('studios'))
     })
-    localStorage.getItem('emptyType') && this.setState({
-      emptyType: JSON.parse(localStorage.getItem('emptyType'))
-    })
   }
 
   componentDidMount(){
@@ -72,7 +69,6 @@ export default class App extends Component {
     localStorage.setItem('studiosRendered', JSON.stringify(nextState.rendered));
     localStorage.setItem('types', JSON.stringify(nextState.yogaTypes));
     localStorage.setItem('studios', JSON.stringify(nextState.studios));
-    localStorage.setItem('emptyType', JSON.stringify(nextState.emptyType));
   }
 
   storeEmptyType = (message) => {
