@@ -53,7 +53,7 @@ export class TypeCard extends Component {
       <article className="typeCoverImage typeSmall">
         {this.props.types[0] && <img src={this.props.image} alt={this.props.name} className="typeSmallImg" id={this.props.name} onClick={this.handleTypeClick}/>}
       </article>
-      <article className="yogaTypeCard scaleUpCenter hidden" onMouseLeave={this.hideInfo}>
+      <article className="yogaTypeCard hidden" onMouseLeave={this.hideInfo}>
         <h4 className='typeHeading heading'>{this.props.name}</h4>
         <h5 className='purposeHeading heading'>Purpose</h5>
         <p className='purpose'>{this.props.purpose}</p>
@@ -61,7 +61,7 @@ export class TypeCard extends Component {
         <h5 className='posesHeading heading'>Common Poses </h5>
         <p className='poses'>{this.props.commonPoses}</p>
         <div>
-          <input onClick={this.handleChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
+          <input onClick={this.handleClickChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
         </div>
       </article>
     </section>)
