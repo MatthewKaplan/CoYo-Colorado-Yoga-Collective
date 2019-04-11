@@ -7,7 +7,7 @@ export const Studios = (props) => {
 
   if(props.rendered.length >= 1) {
     display = 
-    props.rendered.map( studio => 
+    props.rendered.map( studio =>
       <StudioCard
       key={studio.id}
       image={studio.img}
