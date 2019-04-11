@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../Styles/Main.scss';
-import Header from '../Header/Header.js';
+import {Header} from '../Header/Header.js';
 import {Carousel} from '../Carousel/Carousel.js';
 import {Studios} from '../Studios/Studios.js';
+import {DisplayMessage} from '../DisplayMessage/DisplayMessage.js';
 import Search from '../Search/Search.js';
 import Controls from '../Controls/Controls.js';
 import anusara from '../Styles/images/ANUSARA.png'
@@ -15,9 +16,6 @@ import kundalini from '../Styles/images/KUNDALINI.png'
 import vinyasa from '../Styles/images/VINYASA.png'
 import yin from '../Styles/images/YIN.png'
 import restorative from '../Styles/images/RESTORATIVE.png'
-import {DisplayMessage} from '../DisplayMessage/DisplayMessage.js';
-
-
 import '../Styles/Main.scss';
 
 export default class App extends Component {
@@ -92,7 +90,6 @@ export default class App extends Component {
     console.log(cardsDisplayed)
     this.setState({rendered: cardsDisplayed})
   }
-
 
   render() {
     return (

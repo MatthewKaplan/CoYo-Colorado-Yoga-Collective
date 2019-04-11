@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TypeCard should render correctly with all the information passed 1`] = `
+<section
+  className="imageContainer"
+>
+  <article
+    className="typeCoverImage typeSmall"
+  >
+    <img
+      className="typeSmallImg"
+      onClick={[Function]}
+    />
+  </article>
+  <article
+    className="yogaTypeCard hidden"
+    onMouseLeave={[Function]}
+  >
+    <h4
+      className="typeHeading heading"
+    />
+    <h5
+      className="purposeHeading heading"
+    >
+      Purpose
+    </h5>
+    <p
+      className="purpose"
+    />
+    <p
+      className="beginner"
+    >
+      Level of Difficulty: 
+      Advanced
+    </p>
+    <h5
+      className="posesHeading heading"
+    >
+      Common Poses 
+    </h5>
+    <p
+      className="poses"
+    />
+    <div>
+      <input
+        className="findStudioBtn"
+        data-test="find-studios-btn"
+        onClick={[Function]}
+        type="submit"
+        value="Find Studios"
+      />
+    </div>
+  </article>
+</section>
+`;

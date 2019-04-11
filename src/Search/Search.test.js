@@ -19,7 +19,7 @@ let mockStudio =
   teacherTraining: true,
   link: "https://wholeyoga.com",
   img: "https://i.imgur.com/w7KfQWv.jpg"
-  }
+}
 
 let mockStudios = [
   {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StudioCard should render correctly with all the information passed 1`] = `
+exports[`StudioCard should match snapshot 1`] = `
 <article
   className="studioCard"
 >
@@ -10,17 +10,13 @@ exports[`StudioCard should render correctly with all the information passed 1`] 
     <img
       alt="Group Yoga in studio"
       className="studioImg"
-      src="https://i.imgur.com/w7KfQWv.jpg"
     />
     <h4
       className="studioName"
-    >
-      Whole Yoga
-    </h4>
+    />
     <div
       className="studioFee"
     >
-      $17.00
       <div
         className="dropInText"
       >
@@ -36,15 +32,11 @@ exports[`StudioCard should render correctly with all the information passed 1`] 
     >
       <p
         className="address"
-      >
-        1735 E 17th Ave, Denver, CO 80218
-      </p>
+      />
       <a
         className="phoneNum"
         href="tel:3034162958"
-      >
-        (303)333-9642
-      </a>
+      />
     </address>
     <div
       className="missionContainer"
@@ -56,9 +48,7 @@ exports[`StudioCard should render correctly with all the information passed 1`] 
       </h4>
       <p
         className="studioMission"
-      >
-        Where body and mind become whole.
-      </p>
+      />
     </div>
     <div
       className="inline"
@@ -70,20 +60,17 @@ exports[`StudioCard should render correctly with all the information passed 1`] 
           className="starsInner"
           style={
             Object {
-              "width": "100%",
+              "width": undefined,
             }
           }
         />
       </div>
       <p
         className="studioRating"
-      >
-        4.8
-      </p>
+      />
     </div>
     <a
       className="studioLink"
-      href="https://wholeyoga.com"
       rel="noopener noreferrer"
       target="_blank"
     >

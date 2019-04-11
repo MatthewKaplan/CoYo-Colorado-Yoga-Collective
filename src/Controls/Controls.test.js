@@ -4,10 +4,33 @@ import { shallow } from 'enzyme';
 
 describe('Controls', () => {
   let wrapper;
+
+  let mockStudio = 
+  {
+    name: "Whole Yoga",
+    mainTypeOffered: 5,
+    address: "1735 E 17th Ave, Denver, CO 80218",
+    phoneNum: "(303)333-9642",
+    openEveryday: true,
+    mission: "Where body and mind become whole.",
+    googleRating: 4.8,
+    dropInFee: "$17.00",
+    teacherTraining: true,
+    link: "https://wholeyoga.com",
+    img: "https://i.imgur.com/w7KfQWv.jpg"
+  }
+
+  const storeEmptyType = jest.fn()
+  const storeRendered = jest.fn()
+
   beforeEach(() => {
-    // jest.spyOn(event, 'preventDefault');
     wrapper = shallow(
-      <Controls />
+      <Controls 
+      storeEmptyType={storeEmptyType}
+      studios={mockStudio}
+      storeRendered={storeRendered}
+      rendered={[]}
+      />
     )
   });
 

@@ -8,6 +8,13 @@ export class TypeCard extends Component {
       typeId: 0
     }
   }
+
+  setTypeId = (e) => {
+    e.preventDefault()
+    this.setState({typeId: parseInt(e.target.id)}, () => {
+      this.handleClickChange(this.state.typeId);
+    })
+  }
   
   filterStudioId = (userInput) => {
     return this.props.studios.filter(studio => {
@@ -16,9 +23,8 @@ export class TypeCard extends Component {
     });
   }
 
-  handleClickChange = (e) => {
-    e.preventDefault()
-    let userInput = parseInt(e.target.id);
+  handleClickChange = (typeId) => {
+    let userInput = typeId;
     let result = this.filterStudioId(userInput);
     this.props.storeRendered(result)
     if(userInput === 9 || userInput === 10) {
@@ -59,7 +65,7 @@ export class TypeCard extends Component {
         <h5 className='posesHeading heading'>Common Poses </h5>
         <p className='poses'>{this.props.commonPoses}</p>
         <div>
-          <input onClick={this.handleClickChange} className='findStudioBtn' type="submit" value="Find Studios" id={this.props.id} />
+          <input onClick={this.setTypeId} className='findStudioBtn' data-test="find-studios-btn" type="submit" value="Find Studios" id={this.props.id} />
         </div>
       </article>
     </section>

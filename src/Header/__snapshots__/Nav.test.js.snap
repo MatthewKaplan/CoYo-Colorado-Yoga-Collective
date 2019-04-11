@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should match snapshot 1`] = `
+<nav
+  className="navBar"
+>
+  <div
+    className="logo"
+  >
+    <a
+      className="logoLink"
+      href="#home"
+    >
+       
+      <img
+        alt="CoYo Logo"
+        className="logoImg"
+        src="logo.png"
+      />
+    </a>
+  </div>
+  <ul
+    className="navList"
+  >
+    <li
+      className="facebook socialMedia"
+    >
+      <a
+        className="icon"
+        href="https://www.facebook.com"
+        title="link to facebook"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "facebook-square",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </a>
+    </li>
+    <li
+      className="twitter socialMedia"
+    >
+      <a
+        className="icon"
+        href="www.twitter.com"
+        title="link to Twitter"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "twitter",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </a>
+    </li>
+    <li
+      className="instagram socialMedia"
+    >
+      <a
+        className="icon"
+        href="www.instagram.com"
+        title="link to Instagram"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "instagram",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
