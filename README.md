@@ -29,7 +29,7 @@ npm test
 
 ![Image from iOS](https://user-images.githubusercontent.com/40863560/55840516-dd1ba600-5ae8-11e9-8d20-af467fc340d0.jpg)
 
-!! FINAL PHOTOS OF PROJECT HERE !!
+![screencapture-localhost-3000-2019-04-10-19_56_35](https://user-images.githubusercontent.com/40863560/55925502-e8df9900-5bca-11e9-8413-b05d38c70d92.png)
 
 ## Technologies used:
 
