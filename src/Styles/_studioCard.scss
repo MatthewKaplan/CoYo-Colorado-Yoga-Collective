@@ -1,199 +1,194 @@
-@import 'Mixins';
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
+@import "Mixins";
 
 .studioCard {
   display: inline-block;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 5px;
   border: 1px solid hsl(20, 3%, 54%);
-  box-shadow:  3px 2px 2px hsl(204, 42%, 27%);
+  box-shadow: 3px 2px 2px hsl(204, 42%, 27%);
   background: hsl(208, 28%, 91%);
   min-width: 250px;
   position: relative;
   color: hsl(0, 4%, 18%);
-}
 
-.studioCard:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  box-shadow:5px 5px 5px hsl(204, 42%, 27%);
-}
+  &:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px hsl(204, 42%, 27%);
+  }
 
-.studioImg {
-  position: relative;
-  filter: brightness(30%);
-  max-height: 175px;
-  object-fit: cover; 
-  width: 100%;
-  z-index: 0;
-}
+  .cardCover {
+    position: relative;
 
-.studioName {
-  font-family: $studio-name-font;
-  position: absolute;
-  font-size: 45px;
-  color: $studio-color;
-  left: 0;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.61);
-  line-height: .8;
-  z-index: 2;
-  bottom: 0;
-  padding: 10px 10px 0 10px;
-}
+    .studioImg {
+      position: relative;
+      filter: brightness(30%);
+      max-height: 175px;
+      object-fit: cover;
+      width: 100%;
+      z-index: 0;
+    }
 
-.cardCover {
-  position: relative;
-}
+    .studioName {
+      font-family: $studio-name-font;
+      position: absolute;
+      font-size: 45px;
+      color: $studio-color;
+      left: 0;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.61);
+      line-height: 0.8;
+      z-index: 2;
+      bottom: 0;
+      padding: 10px 10px 0 10px;
+    }
 
-.studioFee {
-  margin-top: 4px;
-  font-family: $primary-font;
-  position: absolute;
-  top: 5px;
-  z-index: 3;
-  right: 16px;
-  font-size: 20px;
-  text-align: center;
-  background-color: $studio-color;
-  border-radius: 3px;
-  padding: 0 5px 5px 5px;
-}
+    .studioFee {
+      margin-top: 4px;
+      font-family: $primary-font;
+      position: absolute;
+      top: 5px;
+      z-index: 3;
+      right: 16px;
+      font-size: 20px;
+      text-align: center;
+      background-color: $studio-color;
+      border-radius: 3px;
+      padding: 0 5px 5px 5px;
+    }
 
-.dropInText {
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 11px;
-}
+    .dropInText {
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 11px;
+    }
+  }
 
-.cardContainer {
-  text-align: center;
-  padding: 1rem;
-  font-family: $primary-font;
-}
+  .contactInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-style: normal;
+    margin: 0;
 
-.studioAddress {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  line-height: 1.5;
-  font-family: $primary-font;
-  font-size: 14px;
-  font-style: normal;
-}
+    .address {
+      margin: 0;
+    }
 
-.studioNumber {
-  font-size: 20px;
-}
+    .phoneNum {
+      font-size: 20px;
+      margin: 0 0 5px 0;
+    }
+  }
 
-main {
-  width: 100%;
-  position: relative;
-  padding-bottom: 16px;
-  text-align: center;
-  font-family: $primary-font;
-}
+  .missionContainer {
+    width: 100%;
+    text-align: left;
 
-.contactInfo {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  font-family: $primary-font;
-  font-size: 14px;
-  font-style: normal;
-  margin: 0;
-}
+    .missionHeading {
+      padding: 0 1rem;
+      width: 100%;
+      font-family: $studio-name-font;
+      font-size: 25px;
+      background-color: $studio-color;
+      font-weight: bold;
+    }
 
-.address {
-  margin: 0;
-}
+    .studioMission {
+      margin: 7px 16px;
+      height: 100px;
+      overflow: auto;
+    }
+  }
 
-.phoneNum {
-  font-size: 20px;
-  margin: 0 0 5px 0;
-}
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-// // MISSION
+  .cardContainer {
+    text-align: center;
+    padding: 1rem;
+    font-family: $primary-font;
+  }
 
-.missionContainer {
-  width: 100%;
-  text-align: left;
-} 
+  .studioAddress {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    line-height: 1.5;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-style: normal;
+  }
 
-.missionHeading {
-  padding: 0 1rem;
-  width: 100%;
-  font-family: $studio-name-font;
-  font-size: 25px;
-  background-color: $studio-color;
-  font-weight: bold;
-}
+  .studioNumber {
+    font-size: 20px;
+  }
 
-.studioMission {
-  margin: 7px 16px;
-  height: 100px;
-  overflow: auto;
-}
+  main {
+    width: 100%;
+    position: relative;
+    padding-bottom: 16px;
+    text-align: center;
+    font-family: $primary-font;
+  }
 
+  .studioLink {
+    width: 85%;
+    transition: all 0.4s ease;
+    font-size: 12px;
+    background: $studio-link-bkgrd;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 5px 5px 15px 5px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: $studio-link-hover;
+  }
 
-.studioLink {
-  width: 85%;
-  transition:all 0.4s ease;
-  font-size: 12px;
-  background: $studio-link-bkgrd;
-  text-transform: uppercase;
-  padding: 10px;
-  margin: 5px 5px 15px 5px;
-  letter-spacing: 3px;
-  border-radius: 5px;
-  color: $studio-link-hover;
-}
+  .studioLink:hover {
+    background-color: $studio-hover-bkrd;
+    font-weight: bold;
+  }
 
-.studioLink:hover {
-  background-color: $studio-hover-bkrd;
-  font-weight: bold;
-}
+  .inline {
+    display: flex;
+    justify-content: center;
 
-// // RATING
+    .starsOuter {
+      position: relative;
+      display: inline-block;
 
-.studioRating {
-  margin-left: 10px;
-}
+      &::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $stars-outer-color;
+      }
 
-.inline {
-  display: flex;
-  justify-content: center;
-}
+      .starsInner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
 
-.starsOuter {
-  position: relative;
-  display: inline-block;
-}
+        &::before {
+          content: "\f005 \f005 \f005 \f005 \f005";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: $studio-card-star-color;
+        }
+      }
+    }
 
-.starsInner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-}
-
-.starsInner::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  color: $studio-card-star-color;
-}
-
-.starsOuter::before {
-  content: "\f005 \f005 \f005 \f005 \f005";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  color: $stars-outer-color;
+    .studioRating {
+      margin-left: 10px;
+    }
+  }
 }

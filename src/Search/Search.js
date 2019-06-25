@@ -24,6 +24,7 @@ class Search extends Component {
 
   handleInputChange = e => {
     e.preventDefault();
+    this.setState({ searchQuery: "" });
     let userInput = this.state.searchQuery.trim().toUpperCase();
     let result = this.findMatchingStudio(userInput);
     this.props.storeRendered(result);

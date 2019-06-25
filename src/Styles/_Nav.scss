@@ -1,11 +1,4 @@
-@import 'Mixins';
-
-ul,
-li {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
+@import "Mixins";
 
 .navBar {
   background-color: hsla(226, 41%, 22%, 0.673);
@@ -14,27 +7,34 @@ li {
   justify-content: space-between;
   align-items: center;
   color: $nav-bar-color;
-}
 
-.icon:hover {
-  color: $studio-color;
-}
+  .logo {
+    width: 3rem;
+    border: 2px solid $nav-logo-border;
+    border-radius: 5px;
+    margin: 0 0 0 10px;
 
-.navList{
-  display: flex;
-  width: 10%;
-  justify-content: space-around;
-  font-size: 30px;
-}
+    .logoImg {
+      width: 100%;
+    }
+  }
 
+  .navList {
+    display: flex;
+    width: 18%;
+    justify-content: space-around;
+    font-size: 35px;
+    margin-bottom: 3px;
 
-.logo {
-  width: 3rem;
-  border: 2px solid $nav-logo-border;
-  border-radius: 5px;
-  margin: 0 0 0 10px;
-}
+    ul,
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
 
-.logoImg {
-  width: 100%;
+      .icon:hover {
+        color: $studio-color;
+      }
+    }
+  }
 }

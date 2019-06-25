@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import TypeCard from "../TypeCard/TypeCard.js";
 import "../Styles/_Carousel.scss";
-const shortid = require("shortid");
 
 class Carousel extends Component {
   renderYogaTypes = () => {

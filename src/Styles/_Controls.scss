@@ -1,18 +1,21 @@
-@import 'Mixins';
+@import "Mixins";
 
 .btnContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-}
 
+  .showAll,
+  .sort {
+    background-color: transparent;
+    border-radius: 4px;
+    margin: 20px;
+    color: $show-btn-text;
+    width: 19%;
 
-.showAll,
-.sort {
-  background-color: transparent;
-  border-radius: 4px;
-  margin: 20px;
-  color: $show-btn-text;
-  width: 19%;
+    &:focus {
+      outline: none;
+    }
+  }
 }

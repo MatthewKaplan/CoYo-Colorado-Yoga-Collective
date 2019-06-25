@@ -1,4 +1,4 @@
-@import 'Mixins';
+@import "Mixins";
 
 *,
 *:after,
@@ -10,78 +10,79 @@
 .imageContainer {
   position: relative;
   z-index: 5;
-}
 
-.typeSmall {
-  min-height: 215px;
-  min-width: 350px;
-  margin: 100px 20px;
-  transition:all 0.5s ease;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  &:hover {
-    z-index: 20;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    box-shadow:5px 5px 5px hsla(206, 40%, 8%, 0.658);
-    transform: scale(1.1);
+  .typeSmall {
+    min-height: 215px;
+    min-width: 350px;
+    margin: 100px 20px;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 20;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      box-shadow: 5px 5px 5px hsla(206, 40%, 8%, 0.658);
+      transform: scale(1.1);
+    }
+
+    .typeSmallImg {
+      width: 100%;
+      height: 100%;
+    }
   }
-    
-}
 
-.typeSmallImg {
-  width: 100%;
-  height: 100%; 
- 
-}
+  .yogaTypeCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid $type-border;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px $yoga-type-shadow;
+    min-width: 700px;
+    max-height: 500px;
+    margin: 50px 10px 10px 10px;
+    padding: 20px;
+    background: $type-background;
+    text-align: center;
 
-.yogaTypeCard {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 2px solid $type-border;
-  border-radius: 5px;
-  box-shadow:  3px 2px 2px $yoga-type-shadow;
-  min-width: 700px;
-  max-height: 500px;
-  margin: 50px 10px 10px 10px;
-  padding: 20px;
-  background: $type-background;
-  text-align: center;
-  // color: hsl(0, 4%, 18%);
-}
+    .typeHeading {
+      font-family: $full-name-heading;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
 
-.hidden {
-  display: none;
-}
+    .heading {
+      font-family: $full-name-heading;
+    }
+    .purpose {
+      font-size: 16px;
+      font-style: italic;
+    }
 
-.typeHeading {
-  font-family: $full-name-heading;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 30px;
-  letter-spacing: 3px;
-}
+    .beginner {
+      font-family: $full-name-heading;
+    }
 
-.heading {
-  font-family: $full-name-heading;
-}
-.purpose {
-  font-size: 16px;
-  font-style: italic;
-}
+    .findStudioBtn {
+      text-transform: uppercase;
+      font-size: 14px;
+      border-radius: 4px;
+      background-color: hsl(196, 63%, 33%);
+      color: $find-studio-btn-text;
+      width: 40%;
 
-.beginner {
-  font-family: $full-name-heading;
-}
-
-.findStudioBtn {
-  text-transform: uppercase;
-  font-size: 14px;
-  border-radius: 4px;
-  background-color: hsl(196, 63%, 33%);
-  color: $find-studio-btn-text;
-  width: 40%;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .hidden {
+    display: none;
+  }
 }
