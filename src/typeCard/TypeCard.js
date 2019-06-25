@@ -10,7 +10,6 @@ export class TypeCard extends Component {
   }
 
   setTypeId = (e) => {
-    e.preventDefault()
     this.setState({typeId: parseInt(e.target.id)}, () => {
       this.handleClickChange(this.state.typeId);
     })
@@ -55,21 +54,40 @@ export class TypeCard extends Component {
   return (
     <section className="imageContainer">
       <article className="typeCoverImage typeSmall">
-        {this.props.types[0] && <img src={this.props.image} alt={this.props.name} className="typeSmallImg" id={this.props.name} onClick={this.handleTypeClick}/>}
+        {this.props.types[0] && (
+          <img
+            src={this.props.image}
+            alt={this.props.name}
+            className="typeSmallImg"
+            data-test="handle-type-btn"
+            id={this.props.name}
+            onClick={e => this.handleTypeClick(e)}
+          />
+        )}
       </article>
       <article className="yogaTypeCard hidden" onMouseLeave={this.hideInfo}>
-        <h4 className='typeHeading heading'>{this.props.name}</h4>
-        <h5 className='purposeHeading heading'>Purpose</h5>
-        <p className='purpose'>{this.props.purpose}</p>
-        <p className='beginner'>Level of Difficulty: {this.props.beginnerFriendly ? 'Beginner friendly' : 'Advanced'}</p>
-        <h5 className='posesHeading heading'>Common Poses </h5>
-        <p className='poses'>{this.props.commonPoses}</p>
+        <h4 className="typeHeading heading">{this.props.name}</h4>
+        <h5 className="purposeHeading heading">Purpose</h5>
+        <p className="purpose">{this.props.purpose}</p>
+        <p className="beginner">
+          Level of Difficulty:{" "}
+          {this.props.beginnerFriendly ? "Beginner friendly" : "Advanced"}
+        </p>
+        <h5 className="posesHeading heading">Common Poses </h5>
+        <p className="poses">{this.props.commonPoses}</p>
         <div>
-          <input onClick={this.setTypeId} className='findStudioBtn' data-test="find-studios-btn" type="submit" value="Find Studios" id={this.props.id} />
+          <input
+            onClick={e => this.setTypeId(e)}
+            className="findStudioBtn"
+            data-test="find-studios-btn"
+            type="submit"
+            value="Find Studios"
+            id={this.props.id}
+          />
         </div>
       </article>
     </section>
-    )
+  );
   }
 }
 
