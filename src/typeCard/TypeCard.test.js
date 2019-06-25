@@ -1,6 +1,7 @@
 import React from "react";
 import TypeCard from "./TypeCard.js";
 import { shallow } from "enzyme";
+import MockData from "../Helper/mockData";
 
 describe("TypeCard", () => {
   const mockYogaType = [
