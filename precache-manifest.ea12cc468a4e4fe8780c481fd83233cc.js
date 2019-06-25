@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "bda65ee0d3f5d9a780bb",
-    "url": "/COYO/static/css/main.ba9ef16b.chunk.css"
+    "revision": "f17f188f338588ca91d5",
+    "url": "/COYO/static/css/main.e5671bd2.chunk.css"
   },
   {
-    "revision": "bda65ee0d3f5d9a780bb",
-    "url": "/COYO/static/js/main.98aeaee5.chunk.js"
+    "revision": "f17f188f338588ca91d5",
+    "url": "/COYO/static/js/main.200f106a.chunk.js"
   },
   {
     "revision": "7e1f9f7a0bd226ee87bf",
     "url": "/COYO/static/js/runtime~main.703a5dd3.js"
   },
   {
-    "revision": "5c721eb88b16fd7080d5",
-    "url": "/COYO/static/js/2.b9724783.chunk.js"
+    "revision": "c637d7c4fdbcfb330358",
+    "url": "/COYO/static/js/2.dbd18874.chunk.js"
   },
   {
     "revision": "fea41fc3bb84c8a31f03afb39fa099d6",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/COYO/static/media/RESTORATIVE.97221bbf.png"
   },
   {
-    "revision": "1e413d965fe30adf670ef8d3a032ddfa",
+    "revision": "15cd93755da29c8f9ff198f31fb070fa",
     "url": "/COYO/index.html"
   }
 ];
