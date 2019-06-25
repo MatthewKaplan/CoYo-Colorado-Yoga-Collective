@@ -6,7 +6,7 @@ As a group project, we wanted to create an app for users to find their favorite 
 
 ## Application deployed at:
 
-[https://matthewkaplan.github.io/COYO/](https://matthewkaplan.github.io/COYO/)
+[https://matthewkaplan.github.io/CoYo-Colorado-Yoga-Collective/](https://matthewkaplan.github.io/CoYo-Colorado-Yoga-Collective/)
 
 
 ## Preview:
