@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import '../Styles/_Controls.scss';
 
 class Controls extends Component {
-  constructor(props) {
-    super(props);
-  }
 
-  displayAllStudios = (e) => {
-    e.preventDefault()
+  displayAllStudios = () => {
     let message = "";
     this.props.storeEmptyType(message);
     this.props.storeRendered(this.props.studios);
@@ -21,7 +17,7 @@ class Controls extends Component {
       ordered = this.props.studios.sort((a, b) => (a.dropInFee > b.dropInFee) ? 1 : -1);
     }
     ordered.forEach(el => {
-      if(el.dropInFee.endsWith('Suggested donation')) {
+      if (el.dropInFee.endsWith('Suggested donation')) {
         let lastElement = ordered.pop();
         ordered.unshift(lastElement);
       }
@@ -29,8 +25,7 @@ class Controls extends Component {
     return ordered;
   }
 
-  sortByPrice = (e) => {
-    e.preventDefault()
+  sortByPrice = () => {
     let filteredPrice = this.priceFilter();
     this.props.storeRendered(filteredPrice);
   }
@@ -42,14 +37,14 @@ class Controls extends Component {
           value='Show all studios'
           type='submit'
           className='showAll'
-          onClick={this.displayAllStudios}
+          onClick={() => this.displayAllStudios()}
           data-test="show-all-button"
           />
           <input
           value='Sort by price' 
           type='submit'
           className='sort'
-          onClick={this.sortByPrice}
+          onClick={() => this.sortByPrice()}
           data-test="sort-price-button"
           />
       </section>

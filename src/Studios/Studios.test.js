@@ -1,7 +1,10 @@
 import React from 'react';
 import Studios from './Studios';
 import { shallow } from 'enzyme';
+import MockData from "../Helper/mockData";
 
+const mockRendered = MockData.mockStudios;
+const mockStudios = MockData.mockStudios;
 const mockRender = jest.fn()
 
 describe('Studios', () => {
@@ -11,6 +14,8 @@ describe('Studios', () => {
     wrapper = shallow(
       <Studios 
         renderDisplay={mockRender}
+        rendered={mockRendered}
+        studios={mockStudios}
       />
     )
   });

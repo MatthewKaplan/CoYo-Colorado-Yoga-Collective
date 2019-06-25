@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../Styles/Main.scss';
 import {Header} from '../Header/Header.js';
-import {Carousel} from '../Carousel/Carousel.js';
-import {Studios} from '../Studios/Studios.js';
+import Carousel from '../Carousel/Carousel.js';
+import Studios from '../Studios/Studios.js';
 import {DisplayMessage} from '../DisplayMessage/DisplayMessage.js';
 import Search from '../Search/Search.js';
 import Controls from '../Controls/Controls.js';
@@ -91,6 +91,7 @@ export default class App extends Component {
   }
 
   render() {
+    console.log(this.state.studios)
     return (
       <section className="App" data-test="component-app">
         <Header />

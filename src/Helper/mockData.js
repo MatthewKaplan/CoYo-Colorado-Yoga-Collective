@@ -47,6 +47,19 @@ const mockStudios = [
     img: "https://i.imgur.com/w7KfQWv.jpg"
   },
   {
+    name: "Rino Yoga Social",
+    mainTypeOffered: 8,
+    address: "3101 Walnut St, Denver, CO 80205",
+    phoneNum: "(720)724-8393",
+    openEveryday: true,
+    mission: "At RYS, our mission is simple: make yoga accessible for all.",
+    googleRating: 5,
+    dropInFee: "Suggested donation",
+    teacherTraining: false,
+    link: "https://www.rinoyogasocial.com/",
+    img: "https://i.imgur.com/nKIbWP2.jpg"
+  },
+  {
     name: "Samadhi Yoga",
     mainTypeOffered: 5,
     address: "639 E 19th Ave, Denver, CO 80203",

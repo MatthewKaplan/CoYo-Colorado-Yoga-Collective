@@ -1,3 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Studios should match snapshot 1`] = `undefined`;
+exports[`Studios should match snapshot 1`] = `
+<section
+  className="studioCardContainer"
+>
+  <StudioCard
+    address="1735 E 17th Ave, Denver, CO 80218"
+    fee="$17.00"
+    image="https://i.imgur.com/w7KfQWv.jpg"
+    link="https://wholeyoga.com"
+    mission="Where body and mind become whole."
+    name="Whole Yoga"
+    phone="(303)333-9642"
+    rating={4.8}
+    roundedRating="100%"
+  />
+  <StudioCard
+    address="3101 Walnut St, Denver, CO 80205"
+    fee="Suggested donation"
+    image="https://i.imgur.com/nKIbWP2.jpg"
+    link="https://www.rinoyogasocial.com/"
+    mission="At RYS, our mission is simple: make yoga accessible for all."
+    name="Rino Yoga Social"
+    phone="(720)724-8393"
+    rating={5}
+    roundedRating="100%"
+  />
+  <StudioCard
+    address="639 E 19th Ave, Denver, CO 80203"
+    fee="$20.00"
+    image="https://i.imgur.com/fkUvUxr.jpg"
+    link="https://samadhiyoga.net"
+    mission="To honor the science of yoga as a methodical process to create a lifestyle of health, happiness, and abundance."
+    name="Samadhi Yoga"
+    phone="(303)860-9642"
+    rating={4.7}
+    roundedRating="90%"
+  />
+</section>
+`;
