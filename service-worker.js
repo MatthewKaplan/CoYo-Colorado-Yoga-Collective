@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/COYO/precache-manifest.ea12cc468a4e4fe8780c481fd83233cc.js"
+  "/CoYo-Colorado-Yoga-Collective/precache-manifest.0c350919ee351a3d7b076e21bb289263.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/COYO/index.html", {
+workbox.routing.registerNavigationRoute("/CoYo-Colorado-Yoga-Collective/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
