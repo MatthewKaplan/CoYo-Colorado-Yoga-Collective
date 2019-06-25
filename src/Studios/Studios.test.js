@@ -1,27 +1,38 @@
-import React from 'react';
-import Studios from './Studios';
-import { shallow } from 'enzyme';
+import React from "react";
+import Studios from "./Studios";
+import { shallow } from "enzyme";
 import MockData from "../Helper/mockData";
 
-const mockRendered = MockData.mockStudios;
+let mockRendered = MockData.mockStudios;
 const mockStudios = MockData.mockStudios;
-const mockRender = jest.fn()
+const mockRender = jest.fn();
 
-describe('Studios', () => {
+describe("Studios", () => {
   let wrapper;
-  
+
   beforeEach(() => {
     wrapper = shallow(
-      <Studios 
+      <Studios
         renderDisplay={mockRender}
         rendered={mockRendered}
         studios={mockStudios}
       />
-    )
+    );
   });
 
-  it('should match snapshot', () => {
+  it("should match snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it("should match snapshot when rendered length is is zero", () => {
+    mockRendered = [];
+    wrapper = shallow(
+      <Studios
+        renderDisplay={mockRender}
+        rendered={mockRendered}
+        studios={mockStudios}
+      />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

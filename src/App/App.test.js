@@ -45,7 +45,7 @@ describe('App', () => {
   it('should store rendered studios', () => {
     expect(wrapper.state('rendered')).toEqual( [] );
     wrapper.instance().storeRendered(mockYogaStudios);
-    expect(wrapper.state('rendered')).toHaveLength(2);
+    expect(wrapper.state('rendered')).toHaveLength(3);
   });
 
   it('should update yoga types', () => {

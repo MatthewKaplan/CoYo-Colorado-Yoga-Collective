@@ -91,7 +91,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.studios)
     return (
       <section className="App" data-test="component-app">
         <Header />
