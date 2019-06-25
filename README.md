@@ -26,9 +26,9 @@ Once you have cloned the repo, install the library dependencies. Run:
 ```bash
 $ npm install
 ```
-To run tests in the game program, Run:
+Launch in your browser:
 ```bash
-$ npm test
+$ npm start
 ```
 
 ## Testing Project:
