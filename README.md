@@ -6,10 +6,14 @@ As a group project, we wanted to create an app for users to find their favorite 
 
 ## Application deployed at:
 
-`https://matthewkaplan.github.io/COYO/`
+[https://matthewkaplan.github.io/COYO/](https://matthewkaplan.github.io/COYO/)
 
 
-## Setup:
+## Preview:
+
+![screencapture-localhost-3000-2019-04-10-23_57_54](https://user-images.githubusercontent.com/40863560/55934082-bf376980-5bec-11e9-8c54-fc62890e1509.jpg)
+
+## Getting Started:
 
 First, clone down the repo.
 
@@ -27,17 +31,37 @@ To run tests in the game program, Run:
 $ npm test
 ```
 
-## Preview:
+## Testing Project:
 
-![screencapture-localhost-3000-2019-04-10-23_57_54](https://user-images.githubusercontent.com/40863560/55934082-bf376980-5bec-11e9-8c54-fc62890e1509.jpg)
+After following the <b>Getting Started</b> instructions you may test the project by doing the following.
 
-## Technologies used:
+test all files:
 
-* fetch API 
-* ReactJS 
-* JSX 
-* SCSS
-* Enzyme/Jest
+```
+$ npm test
+```
+
+test the total coverage of the project:
+
+```
+$ npm t -- --coverage --watchAll=false
+```
+
+<p align="center">
+  <img src="https://i.imgur.com/dXL2hnN.jpg" alt="project test coverage">
+</p>
+
+
+## Project Tools:
+
+- fetch API 
+- ReactJS 
+- JSX 
+- SCSS
+
+## Tested With:
+- Jest
+- Enzyme
 
 ## Authors:
 
@@ -46,3 +70,9 @@ $ npm test
 [Sally Haefling](https://github.com/SallyHaefling)
 
 [Kelly Zick](https://github.com/misskelly)
+
+---
+
+**[Back to top](https://github.com/MatthewKaplan/COYO#coyo-colorado-yoga-collective)**
+
+---

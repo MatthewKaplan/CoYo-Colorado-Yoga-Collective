@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TypeCard should render correctly with all the information passed 1`] = `
+exports[`TypeCard should match snapshot 1`] = `
 <section
   className="imageContainer"
 >
@@ -9,6 +9,7 @@ exports[`TypeCard should render correctly with all the information passed 1`] = 
   >
     <img
       className="typeSmallImg"
+      data-test="handle-type-btn"
       onClick={[Function]}
     />
   </article>
@@ -30,7 +31,8 @@ exports[`TypeCard should render correctly with all the information passed 1`] = 
     <p
       className="beginner"
     >
-      Level of Difficulty: 
+      Level of Difficulty:
+       
       Advanced
     </p>
     <h5

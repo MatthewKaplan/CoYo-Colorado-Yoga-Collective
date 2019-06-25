@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from './Carousel';
+import Carousel from './Carousel';
 import { shallow } from 'enzyme';
 
 describe('Carousel', () => {
@@ -34,11 +34,11 @@ describe('Carousel', () => {
     img: "https://i.imgur.com/w7KfQWv.jpg"
   }
 
-  const storeEmptyType = jest.fn()
-  const storeRendered = jest.fn()
+  const storeEmptyType = jest.fn();
+  const storeRendered = jest.fn();
 
   it('should match snapshot', () => {
-    wrapper = shallow (<Carousel
+    let wrapper = shallow (<Carousel
           yogaTypes={mockYogaType}
           studios={mockStudio}
           storeRendered={storeRendered}

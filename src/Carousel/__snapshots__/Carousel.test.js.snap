@@ -1,3 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Carousel should match snapshot 1`] = `undefined`;
+exports[`Carousel should match snapshot 1`] = `
+<main
+  className="carouselContainer"
+>
+  <section
+    className="carouselText"
+  >
+    <h3
+      className="carouselHeading"
+    >
+      Scroll to explore yoga types &gt;&gt;&gt; 
+    </h3>
+    <p
+      className="carouselMessage"
+    >
+      Click a type to learn more and find a local studio offering that style
+    </p>
+  </section>
+  <section
+    className="typeContainer"
+  >
+    <TypeCard
+      beginnerFriendly={true}
+      commonPoses={
+        Array [
+          "Vrikshasana, ",
+          "Salabhasana, ",
+          "Tadasana, ",
+          "Uttanasana, ",
+          "Adho Mukha Svanasana, ",
+          "Setu Bandhasana, ",
+        ]
+      }
+      image="/static/media/JIVAMUKTI.41aa6479.png"
+      name="Hatha"
+      propsUsed={false}
+      purpose="To align and calm your body, mind, and spirit in preparation for meditation."
+      storeEmptyType={[MockFunction]}
+      storeRendered={[MockFunction]}
+      studios={
+        Object {
+          "address": "1735 E 17th Ave, Denver, CO 80218",
+          "dropInFee": "$17.00",
+          "googleRating": 4.8,
+          "img": "https://i.imgur.com/w7KfQWv.jpg",
+          "link": "https://wholeyoga.com",
+          "mainTypeOffered": 5,
+          "mission": "Where body and mind become whole.",
+          "name": "Whole Yoga",
+          "openEveryday": true,
+          "phoneNum": "(303)333-9642",
+          "teacherTraining": true,
+        }
+      }
+      types={
+        Array [
+          Object {
+            "beginnerFriendly": true,
+            "commonPoses": Array [
+              "Vrikshasana",
+              "Salabhasana",
+              "Tadasana",
+              "Uttanasana",
+              "Adho Mukha Svanasana",
+              "Setu Bandhasana",
+            ],
+            "id": 10,
+            "image": "/static/media/JIVAMUKTI.41aa6479.png",
+            "name": "Hatha",
+            "propsUsed": false,
+            "purpose": "To align and calm your body, mind, and spirit in preparation for meditation.",
+          },
+        ]
+      }
+    />
+  </section>
+</main>
+`;
