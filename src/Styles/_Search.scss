@@ -1,32 +1,27 @@
-@import 'Mixins';
+@import "Mixins";
 
 .searchStudioContainer {
   display: flex;
   justify-content: center;
   height: 40px;
   width: 100%;
-}
 
-.searchStudio {
-  margin: 10px 10px 0 10px;
-  width: 41%;
-}
+  .searchStudio {
+    margin: 10px 10px 0 10px;
+    width: 41%;
 
-.searchIcon {
-  padding: 0.2rem;
-  font-size: 16px;
-}
+    .studioSearch {
+      width: 100%;
+      border: 1px solid $studio-search-border;
+      border-radius: 4px;
+      font-size: 16px;
+      padding: 0.2rem 0.2rem 0.2rem 1rem;
 
-.studioSearch {
-  width: 100%;
-  border: 1px solid $studio-search-border;
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 0.2rem 0.2rem 0.2rem 1rem;
-}
-
-.studioSearch:focus {
-  border-right: none;
-  border: 1px solid $studio-search-focus;
-  outline: none;
+      &:focus {
+        border-right: none;
+        border: 1px solid $studio-search-focus;
+        outline: none;
+      }
+    }
+  }
 }

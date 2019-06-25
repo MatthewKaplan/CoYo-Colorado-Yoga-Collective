@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/_Header.scss';
 import {Nav} from './Nav'
 
-export const Header = (props) => {
+export const Header = () => {
   return (
     <header className="pageHeader">
       <section className="banner">

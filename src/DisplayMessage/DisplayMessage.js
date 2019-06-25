@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const DisplayMessage = (props) => {
+export const DisplayMessage = ({emptyType}) => {
   return(
     <article className="displayMessageContainer">
-        <p className="emptyTypeText">{props.emptyType}</p>
+        <p className="emptyTypeText">{emptyType}</p>
     </article>
   )
 }

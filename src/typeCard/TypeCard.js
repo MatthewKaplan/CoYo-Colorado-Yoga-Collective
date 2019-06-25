@@ -39,8 +39,6 @@ export class TypeCard extends Component {
 
   handleTypeClick = (e) => {
     const infoCard = e.target.parentElement.nextSibling;
-    console.log(e.target.parentElement);
-    console.log(e)
     e.target.parentElement.classList.add('hidden');
     infoCard.classList.remove('hidden');
   }
