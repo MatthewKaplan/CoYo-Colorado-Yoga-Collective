@@ -38,3 +38,9 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .navBar .navList {
+    width: 50%;
+  }
+}
