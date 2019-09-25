@@ -1,4 +1,6 @@
-# CoYo: Colorado Yoga Collective
+<img src="https://i.imgur.com/sMeIJPy.png" width="100"  align="left" /> <br /> <br />
+
+# CoYo: Colorado Yoga Collective 
 
 ## Abstract:
 
@@ -11,7 +13,7 @@ As a group project, we wanted to create an app for users to find their favorite 
 
 ## Preview:
 
-![screencapture-localhost-3000-2019-04-10-23_57_54](https://user-images.githubusercontent.com/40863560/55934082-bf376980-5bec-11e9-8c54-fc62890e1509.jpg)
+<img src="https://i.imgur.com/MhlSAFo.png" width="900" />
 
 ## Getting Started:
 
